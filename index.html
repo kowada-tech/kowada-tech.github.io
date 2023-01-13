@@ -5,10 +5,846 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numexpert</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello</h1>
-    <img src="img/mult.jpg" alt="image">
+    <div class="main_page">
+        <header class="header">
+            <div class="page_wrap">
+                <div class="wrapper">
+                    <a href="#" class="logo">
+                        <div class="logo_img">
+                            <span class="icon-logo"></span>
+                        </div>
+                        <span class="logo_title">
+                            Центр исследований 
+                            <br>культурных ценностей
+                        </span>
+                    </a>
+                    <div class="langMenu">
+                        <div class="langMenu_picture">
+                            <img src="img/lang/ru.svg" alt="Russian" class="langMenu_img russian_pic active">
+                            <img src="img/lang/en.svg" alt="English" class="langMenu_img english_pic">
+                        </div>
+                        <ul class="langMenu_list">
+                            <li class="langMenu_item">
+                                <img src="img/lang/ru.svg" alt="Russian" class="langMenu_icon russian">
+                            </li>
+                            <li class="langMenu_item">
+                                <img src="img/lang/en.svg" alt="English" class="langMenu_icon english">
+                            </li>
+                        </ul>
+                       
+                    </div>
+                    
+                    <div class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_item">
+                                <p class="menu_item_title">Экспертиза</p>
+                                <!-- <ul class="menu_item_list">
+                                    <li class="menu_item_point">
+                                        <a href="https://numar.ru/medals">Заявка на экспертизу</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Реестр экспертиз</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Эксперты</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Кодекс чести эксперта</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="menu_item">
+                                <p class="menu_item_title">Слабы</p>
+                                <!-- <ul class="menu_item_list">
+                                    <li class="menu_item_point">
+                                        <a href="#">Заявка на экспертизу</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Реестр экспертиз</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Эксперты</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Кодекс чести эксперта</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="menu_item">
+                                <p class="menu_item_title">Подделки</p>
+                               <!--  <ul class="menu_item_list">
+                                    <li class="menu_item_point">
+                                        <a href="#">Заявка на экспертизу</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Реестр экспертиз</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Эксперты</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Кодекс чести эксперта</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="menu_item">
+                                <p class="menu_item_title">Магазин</p>
+                                <!-- <ul class="menu_item_list">
+                                    <li class="menu_item_point">
+                                        <a href="#">Заявка на экспертизу</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Реестр экспертиз</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Эксперты</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Кодекс чести эксперта</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="menu_item">
+                                <p class="menu_item_title">Публикации</p>
+                                <!-- <ul class="menu_item_list">
+                                    <li class="menu_item_point">
+                                        <a href="#">Заявка на экспертизу</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Реестр экспертиз</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Эксперты</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Кодекс чести эксперта</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="menu_item">
+                                <p class="menu_item_title">О нас</p>
+                                <!-- <ul class="menu_item_list">
+                                    <li class="menu_item_point">
+                                        <a href="#">Партнеры</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">Благотворительность</a>
+                                    </li>
+                                    <li class="menu_item_point">
+                                        <a href="#">О компании</a>
+                                    </li>
+                                </ul> -->
+                            </li>
+                            <li class="menu_item menu_item_end">
+                                <a href="#" class="menu_item_title">Контакты</a>
+                            </li>
+                            <li class="menu_item menu_item_more">
+                                <p class="menu_item_title">Еще</p>
+                                <ul class="menu_item_list" id="more">
+                                    <li class="menu_more">
+                                        <p class="menu_item_title_more">О нас</p>
+                                        <ul class="menu_item_list_more">
+                                            <li class="menu_item_point more">
+                                                <a href="#">Партнеры</a>
+                                            </li>
+                                            <li class="menu_item_point more">
+                                                <a href="#">Благотворительность</a>
+                                            </li>
+                                            <li class="menu_item_point more">
+                                                <a href="#">О компании</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_more">
+                                        <p class="menu_item_title_more">Публикации</p>
+                                        <ul class="menu_item_list_more">
+                                            <li class="menu_item_point more">
+                                                <a href="#">Партнеры</a>
+                                            </li>
+                                            <li class="menu_item_point more">
+                                                <a href="#">Благотворительность</a>
+                                            </li>
+                                            <li class="menu_item_point more">
+                                                <a href="#">О компании</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu_more">
+                                        <p class="menu_item_title_more">компании</p>
+                                    </li>
+                                    <li class="menu_more">
+                                        <p class="menu_item_title_more">Благотворительность</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#" class="socials_link">
+                            <span class="icon-whatsapp"></span>
+                        </a>
+                        <a href="#" class="socials_link">
+                            <span class="icon-viber"></span>
+                        </a>
+                        <a href="#" class="socials_link">
+                            <span class="icon-telegram"></span>
+                        </a>
+                        <a href="tel:+79261230321" class="socials_phone">
+                            8 926 123 0 321
+                        </a>
+                    </div>
+
+                    <a href="#" class="basket">
+                        <span class="icon-basket"></span>
+                        <span class="basket_value">3</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="carousel">
+            <div class="page_wrap">
+                <div class="carousel_inner">
+                    <div>
+                        <div class="carousel_wrap">
+                            <div class="carousel_col"></div>
+                            <div class="carousel_descr">
+                                <h2 class="title carousel_title">
+                                    «Центр исследований культурных ценностей»
+                                </h2>
+                                <div class="carousel_text">
+                                    Мы объединение единомышленников, готовых внести свой вклад в  развитие экспертного дела и изучение предметов нумизматики, фалеристики, декоративно-прикладного искусства, икон, букинистики...
+                                </div>
+                            </div>
+                            <div class="carousel_img">
+                                <p>
+                                    <img src="img/carousel/slider_1.jpg" alt="slide">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel_wrap">
+                            <div class="carousel_col"></div>
+                            <div class="carousel_descr">
+                                <h2 class="title carousel_title">
+                                    «Экспертиза культурных ценностей»
+                                </h2>
+                                <div class="carousel_text">
+                                    Центр исследований культурных ценностей  ведет научно-исследовательскую и практическую деятельность в области атрибуции и экспертизы предметов антиквариата
+                                </div>
+                            </div>
+                            <div class="carousel_img">
+                                <p>
+                                    <img src="img/carousel/slider_2.jpg" alt="slide">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel_wrap">
+                            <div class="carousel_descr">
+                                <h2 class="title carousel_title">
+                                    «Эксперты»
+                                </h2>
+                                <div class="carousel_text">
+                                    Эксперты по нумизматике с 20-летним стажем. Коллекционеры. Члены Московского нумизматического общества. Авторы нумизматических каталогов
+                                </div>
+                            </div>
+                            <div class="carousel_img">
+                                <p>
+                                    <img src="img/carousel/slider_3.jpg" alt="slide">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel_wrap">
+                            <div class="carousel_descr">
+                                <h2 class="title carousel_title">
+                                    «Борьба с подделками»
+                                </h2>
+                                <div class="carousel_text">
+                                    Оказание квалифицированных услуг по определению подлинности и атрибуции культурных ценностей
+                                </div>
+                            </div>
+                            <div class="carousel_img">
+                                <p>
+                                    <img src="img/carousel/slider_4.jpg" alt="slide">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel_wrap">
+                            <div class="carousel_descr">
+                                <h2 class="title carousel_title">
+                                    «Благотворительность»
+                                </h2>
+                                <div class="carousel_text">
+                                    Наша  организация, считая благотворительность своим долгом,  старается по мере возможностей оказывать помощь нескольким благотворительным организациям и детским домам
+                                </div>
+                            </div>
+                            <div class="carousel_img">
+                                <p>
+                                    <img src="img/carousel/slider_5.jpg" alt="slide">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="carousel_wrap">
+                            <div class="carousel_descr">
+                                <h2 class="title carousel_title">
+                                    «Обучение экспертному делу»
+                                </h2>
+                                <div class="carousel_text">
+                                    Объединение единомышленников, готовых внести свой вклад в  развитие экспертного дела и изучение культурных ценностей. Наши эксперты помогут определить подлинность монет, медалей, предметов декоративно-прикладного искусства, икон, букинистики
+                                </div>
+                            </div>
+                            <div class="carousel_img">
+                                <p>
+                                    <img src="img/carousel/slider_6.jpg" alt="slide">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="searchForms">
+            <div class="page_wrap">
+                <div class="wrapper">
+                    <form class="searchForms_form" action="#">
+                        <label for="expert">Проверить экспертное заключение:</label>
+                        <div class="searchForms_input">
+                            <input id="expert" type="text" placeholder="Номер">
+                            <button class="searchForms_btn">Проверить</button>
+                        </div>
+                    </form>
+                    <form class="searchForms_form" action="#">
+                        <label for="slab">Проверить слаб:</label>
+                        <div class="searchForms_input">
+                            <input id="slab" type="text" placeholder="Номер">
+                            <input id="grade" type="text" list="grade_list" placeholder="Грейд">
+                            <datalist id="grade_list">
+                                <option>AU50</option>
+                                <option>AU53</option>
+                                <option>AU55</option>
+                                <option>AU58</option>
+                                <option>F</option>
+                                <option>MS60 PL</option>
+                                <option>MS61</option>
+                                <option>MS61 PL</option>
+                                <option>MS62</option>
+                                <option>MS62 PL</option>
+                                <option>MS63</option>
+                                <option>MS63 PL</option>
+                                <option>Prooflike</option>
+                                <option>UNC Details</option>
+                                <option>UNC</option>
+                                <option>VG10</option>
+                            </datalist>
+                            <button class="searchForms_btn">Найти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="publications">
+            <div class="page_wrap">
+                <a href="#">
+                    <h2 class="title title_sections">Публикации</h2>
+                </a>
+                <div class="wrapper">
+                    <a href="#" class="publications_item">
+                        <div class="publications_img">
+                            <p>
+                                <img src="img/public/4.jpg" alt="publication">
+                            </p>
+                        </div>
+                        <h3 class="title title_middle">Клад из Киево-Печерской лавры</h3>
+                        <div class="publications_descr">Девять веков насчитывает история этого памятника, неповторимого и по своей красоте, и по значению своему в судьбе России. Стены лавры ...</div>
+                    </a>
+                    
+                    <a href="#" class="publications_item">
+                        <div class="publications_img">
+                            <p>
+                                <img src="img/public/5.jpg" alt="publication">
+                            </p>
+                        </div>
+                        <h3 class="title title_middle">Монеты и монетное обращение переходного периода 1917-1927</h3>
+                        <div class="publications_descr">Первое большевистское десятилетие нумизматики характеризуется сложнейшим переплетением элементов царской и советской денежных ...</div>
+                    </a>
+                    <a href="#" class="publications_item">
+                        <div class="publications_img">
+                            <p>
+                                <img src="img/public/6.jpg" alt="publication">
+                            </p>
+                        </div>
+                        <h3 class="title title_middle">Как изготовлялись древние монеты</h3>
+                        <div class="publications_descr">Существовало два основных способа изготовления монет в древности: литье и чеканка. При литье металл заливался в форму, на которой было вырезано зеркальное изображение ...</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="page_wrap">
+                <a href="#">
+                    <h2 class="title title_sections">Новости</h2>
+                </a>
+                <div class="wrapper">
+                    <a class="news_item">
+                        <div class="news_img">
+                            <p>
+                                <img src="img/news/1.jpg" alt="news">
+                            </p>
+                        </div>
+                        <h3 class="title title_small">Режим работы в праздничные дни</h3>
+                        <div class="news_date">31 декабря 2022</div>
+                    </a>
+                    <a class="news_item">
+                        <div class="news_img">
+                            <p>
+                                <img src="img/news/2.jpg" alt="news">
+                            </p>
+                        </div>
+                        <h3 class="title title_small">Экспертиза ДПИ</h3>
+                        <div class="news_date">23 декабря 2022</div>
+                    </a>
+                    <a class="news_item">
+                        <div class="news_img">
+                            <p>
+                                <img src="img/news/3.jpg" alt="news">
+                            </p>
+                        </div>
+                        <h3 class="title title_small">График работы в праздничные дни</h3>
+                        <div class="news_date">2 ноября 2022</div>
+                    </a>
+                    <a class="news_item">
+                        <div class="news_img">
+                            <p>
+                                <img src="img/news/4.jpg" alt="news">
+                            </p>
+                        </div>
+                        <h3 class="title title_small">Экспертиза червонца</h3>
+                        <div class="news_date">31 октября 2022</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="page_wrap">
+                <div class="wrapper">
+                    <div class="services_item">
+                        <a href="#">
+                            <h3 class="title title_sections">Услуги и сервисы</h3>
+                        </a>
+                        <div class="services_list">
+                            <a href="#" class="services_link">Услуги
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                            <a href="#" class="services_link">Наши сервисы
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services_img">
+                            <p>
+                                <img src="img/services/services_1.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services_item">
+                        <a href="#">
+                            <h3 class="title title_sections">Руководство для начинающих</h3>
+                        </a>
+                        <div class="services_list">
+                            <a href="#" class="services_link">Как пользоваться каталогом
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services_img">
+                            <p>
+                                <img src="img/services/services_2.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services_item">
+                        <a href="#">
+                            <h3 class="title title_sections">База данных</h3>
+                        </a>
+                        <div class="services_list">
+                            <a href="#" class="services_link">Посмотреть цены на монеты
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services_img">
+                            <p>
+                                <img src="img/services/services_3.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="events">
+            <div class="page_wrap">
+                <a href="#">
+                    <h2 class="title title_sections">Лекции и мероприятия</h2>
+                </a>
+                <div class="wrapper">
+                    <a href="https://youtu.be/NNq00tFH-jg" class="events_item">
+                        <div class="events_img">
+                            <p>
+                                <img src="img/video/video_1.jpg" alt="video">
+                            </p>
+                            <img src="img/play.svg" alt="play" class="events_play">
+                        </div>
+                        
+                        <div class="events_descr">Запись лекции</div>
+                    </a>
+                    <div class="events_lecture">
+                        <a href="#" class="events_item">
+                            <div class="events_img">
+                                <p>
+                                    <img src="img/video/video_2.jpg" alt="video">
+                                </p>
+                            </div>
+                            <h3 class="title title_small">Лекция: «История денег, изображенная на монетах»</h3>
+                            <div class="events_date">10 Августа 2022</div>
+                        </a>
+                        <button class="events_btn">Записаться на лекцию</button>
+                    </div>
+                    <a href="https://youtu.be/TkU2Bg5iL18" class="events_item">
+                        <div class="events_img">
+                            <p>
+                                <img src="img/video/video_3.jpg" alt="video">
+                            </p>
+                            <img src="img/play.svg" alt="play" class="events_play">
+                        </div>
+                        <div class="events_descr">Запись лекции</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="museum">
+            <div class="page_wrap">
+                <a href="#">
+                    <h2 class="title title_sections">Музей подделок</h2>
+                </a>
+                <div class="wrapper">
+                    <a href="#" class="museum_item">
+                        <div class="museum_img">
+                            <p>
+                                <img src="img/museum/museum_1.jpg" alt="museum">
+                            </p>
+                        </div>
+                        <h4 class="title title_small">Червонец Екатерины II</h4>
+                        <div class="danger">
+                            <div class="danger_descr">Опасность:</div>
+                            <div class="danger_scale" data-scale="3">
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="museum_item">
+                        <div class="museum_img">
+                            <p>
+                                <img src="img/museum/museum_2.jpg" alt="museum">
+                            </p>
+                        </div>
+                        <h4 class="title title_small">10 рублей Николая II</h4>
+                        <div class="danger">
+                            <div class="danger_descr">Опасность:</div>
+                            <div class="danger_scale" data-scale="4">
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="museum_item">
+                        <div class="museum_img">
+                            <p>
+                                <img src="img/museum/museum_3.jpg" alt="museum">
+                            </p>
+                        </div>
+                        <h4 class="title title_small">Полтинник Петра I</h4>
+                        <div class="danger">
+                            <div class="danger_descr">Опасность:</div>
+                            <div class="danger_scale" data-scale="2">
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="museum_item">
+                        <div class="museum_img">
+                            <p>
+                                <img src="img/museum/museum_4.jpg" alt="museum">
+                            </p>
+                        </div>
+                        <h4 class="title title_small">50 копеек Павла I</h4>
+                        <div class="danger">
+                            <div class="danger_descr">Опасность:</div>
+                            <div class="danger_scale" data-scale="1">
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                                <div class="danger_circle"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="page_wrap">
+                <div class="wrapper">
+                    <div class="services_item">
+                        <a href="#">
+                            <h3 class="title title_sections">Услуги</h3>
+                        </a>
+                        <div class="services_list">
+                            <a href="#" class="services_link">Отдел нумизматики
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                            <a href="#" class="services_link">Отдел фалеристики
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                            <a href="#" class="services_link">Другие культурные ценности
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="services_img">
+                            <p>
+                                <img src="img/services/services_1.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services_item">
+                        <a href="#">
+                            <h3 class="title title_sections">База данных</h3>
+                        </a>
+                        <div class="services_list">
+                            <a href="#" class="services_link">Реестр экспертиз
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                            <a href="#" class="services_link">Музей подделок
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services_img">
+                            <p>
+                                <img src="img/services/services_2.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services_item">
+                        <a href="#">
+                            <h3 class="title title_sections">Контакты</h3>
+                        </a>
+                        <div class="services_list">
+                            <a href="#" class="services_link">Форма обратной связи
+                                <div class="services_arrow">
+                                    <div></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="services_img">
+                            <p>
+                                <img src="img/services/services_3.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="page_wrap">
+                <div class="wrapper">
+                    <div class="footer_about">
+                        <a href="#" class="logo">
+                            <div class="logo_img">
+                                <span class="icon-logofoot"></span>
+                            </div>
+                            <span class="logo_title">
+                                Центр исследований 
+                                <br>культурных ценностей
+                            </span>
+                        </a>
+                        <div class="footer_text">Официальная экспертиза монет и
+                            <br>антиквариата ЦИКЦ (альтернатива ГИМ)</div>
+                        <div class="footer_decsr">© 1999-2021 Центр исследований культурных ценностей</div>
+                    </div>
+                    <div class="footer_col_left">
+                        <div class="footer_list">
+                            <h3 class="title title_small">Услуги</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Отдел нумизматики</a>
+                                </liclass=>
+                                <li>
+                                    <a href="#">Отдел фалеристики</a>
+                                </li>
+                                <li>
+                                    <a href="#">Другие культурные ценности</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_list">
+                            <h3 class="title title_small">Эксперты</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Эксперты отдела нумизматики</a>
+                                </lis=>
+                                <li>
+                                    <a href="#">Эксперты отдела фалеристики</a>
+                                </li>
+                                <li>
+                                    <a href="#">Эксперты по другим культурным ценостям</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_list">
+                            <h3 class="title title_small">База данных</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Реестр экспертиз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Музей подделок</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_col_right">
+                        <div class="footer_list">
+                            <h3 class="title title_small">Публикации</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#">Публикации</a>
+                                </li>
+                                <li>
+                                    <a href="#">Лекции</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_list">
+                            <h3 class="title title_small">Магазин</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Сувенирная продукция</a>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_list">
+                            <h3 class="title title_small">ЦИКЦ</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Эксперты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Кодекс чести эксперта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Благотворительность</a>
+                                </li>
+                                <li>
+                                    <a href="#">Партнёры</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_contacts">
+                        <h3 class="title title_small">Контакты</h3>
+                        <div class="footer_decsr">
+                            Номер для отправки фото 
+                            <br>Viber, WhatsApp, MMS:
+                        </div>
+                        <div class="socials">
+                            <a href="#" class="socials_link">
+                                <span class="icon-whatsapp"></span>
+                            </a>
+                            <a href="#" class="socials_link">
+                                <span class="icon-viber"></span>
+                            </a>
+                            <a href="#" class="socials_link">
+                                <span class="icon-telegram"></span>
+                            </a>
+                            <a href="tel:+79261230321" class="socials_phone">
+                                8 926 123 0 321
+                            </a>
+                        </div>
+                        <div class="footer_decsr">
+                            Адрес электронной
+                            <br>корреспонденции:
+                        </div>
+                        <div class="footer_email">
+                            <span class="icon-email"></span>
+                            <a href="mailto:info@numexpert.ru" class="socials_link">
+                                info@numexpert.ru
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </footer>
+    </div>
+
+    <script type='text/javascript' src='js/jquery-3.6.3.min.js'></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type='text/javascript' src='js/script.js'></script>
+
 </body>
 </html>
