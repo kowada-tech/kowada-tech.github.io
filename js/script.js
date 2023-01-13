@@ -88,25 +88,93 @@ $(document).ready(function() {
     }
   });
 
-let widthWindow = $(window).width();
-    let menuList = $('.menu_list').children().length;
-    let menuItem = $('.menu_list').children().eq(menuList - 3);
+  let counter = 0;
+  let previousWindow;
 
-    console.log(menuItem);
+  checkMenuWidthWhenLoad ($(window).width(), counter);
+
+
+ // console.log(previousWindow);
+
+  $(window).resize(function() {
     
-    /* if (widthWindow > 1600) {
-      console.log(1);
-    } else {
-      $('.menu_item_more').show();
-      $('.menu_list')
-    } */
+    let widthWindow = $(window).width();
+
+    /* console.log(widthWindow);
+    console.log(previousWindow); */
+
+    if (previousWindow > widthWindow) {
+     counter = checkMenuWidthWhenResize(widthWindow, counter);
+    }
+    
+    previousWindow = widthWindow;
+  });
+
+  function checkMenuWidthWhenLoad (widthWindow, counter) {
+    if (widthWindow < 1600) {
+      counter = hideMenuItem (1600);
+    }
+
+    if (widthWindow < 1400) {
+      counter = hideMenuItem (1400);
+    }
+
+    if (widthWindow < 1200) {
+      counter = hideMenuItem (1200);
+    }
+  }
+
+  function checkMenuWidthWhenResize (widthWindow, counter) {
+    if (1400 <= widthWindow && widthWindow < 1600 && counter !== 1600) {
+      counter = hideMenuItem (1600);
+    }
+
+    if (1200 <= widthWindow && widthWindow < 1400 && counter !== 1400) {
+      counter = hideMenuItem (1400);
+    }
+
+    if (1000 <= widthWindow && widthWindow < 1200 && counter !== 1200) {
+      counter = hideMenuItem (1200);
+    }
+    return counter;
+  }
 
 
-  /* $('#more').append(menuItem);
-  menuItem.children().removeClass(); */
-  
+
+  function hideMenuItem (counter) {
+    $('.menu_item_more').show();
+    let menuList = $('.menu_list').children().length;
+    let menuItem = $('.menu_list').children().eq(menuList - 2);
+    let a = menuItem.removeClass().addClass('menu_more');
+    let b = a.find('.menu_item_title').removeClass().addClass('menu_more_title');
+    let c = a.find('.menu_item_list').removeClass().addClass('menu_more_list');
+    $('#more').append(menuItem);
+    return counter;
+  }
+
+  function shoMenuItem (counter) {
+
+
+
+    $('.menu_item_more').show();
+    let menuList = $('.menu_list').children().length;
+    let menuItem = $('.menu_list').children().eq(menuList - 2);
+    let a = menuItem.removeClass().addClass('menu_more');
+    let b = a.find('.menu_item_title').removeClass().addClass('menu_more_title');
+    let c = a.find('.menu_item_list').removeClass().addClass('menu_more_list');
+    $('#more').append(menuItem);
+    return counter;
+  }
+
+    //console.log(counter + 'inner');
+
+    $('.menu_item_list').parent().addClass('check');
+  $('.menu_more_list').parent().find('.menu_more_title').addClass('check');
+
   $('.menu_more').click(function() {
     $(this).toggleClass('active');
   });
+    
+
 
 });
