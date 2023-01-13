@@ -613,6 +613,8 @@ input[type=number]::-webkit-inner-spin-button {
 .header .socials_link:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-animation: jump 1s ease infinite;
+          animation: jump 1s ease infinite;
 }
 .header .socials .icon-whatsapp {
   font-size: 22px;
