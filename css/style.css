@@ -225,6 +225,34 @@ input[type=number]::-webkit-inner-spin-button {
             transform: scale(1);
   }
 }
+@-webkit-keyframes heartbeaticon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes heartbeaticon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @-webkit-keyframes jump {
   70% {
     -webkit-transform: translateY(0%);
@@ -611,10 +639,8 @@ input[type=number]::-webkit-inner-spin-button {
   color: #fff;
 }
 .header .socials_link:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-animation: jump 1s ease infinite;
-          animation: jump 1s ease infinite;
+  -webkit-animation: heartbeaticon 1.5s ease infinite;
+          animation: heartbeaticon 1.5s ease infinite;
 }
 .header .socials .icon-whatsapp {
   font-size: 22px;
