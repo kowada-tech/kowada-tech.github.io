@@ -999,8 +999,6 @@ input[type=number]::-webkit-inner-spin-button {
 .news_item:hover {
   -webkit-box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 .news_item:hover .title {
   color: #650b47;
