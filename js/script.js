@@ -88,20 +88,14 @@ $(document).ready(function() {
     }
   });
 
-  let counter = 0;
+  /* let counter = 0;
   let previousWindow;
 
   checkMenuWidthWhenLoad ($(window).width(), counter);
 
-
- // console.log(previousWindow);
-
-  $(window).resize(function() {
+   $(window).resize(function() {
     
     let widthWindow = $(window).width();
-
-    /* console.log(widthWindow);
-    console.log(previousWindow); */
 
     if (previousWindow > widthWindow) {
      counter = checkMenuWidthWhenResize(widthWindow, counter);
@@ -139,8 +133,6 @@ $(document).ready(function() {
     return counter;
   }
 
-
-
   function hideMenuItem (counter) {
     $('.menu_item_more').show();
     let menuList = $('.menu_list').children().length;
@@ -151,24 +143,18 @@ $(document).ready(function() {
     $('#more').append(menuItem);
     return counter;
   }
-
+    
   function shoMenuItem (counter) {
-
-
-
-    $('.menu_item_more').show();
-    let menuList = $('.menu_list').children().length;
-    let menuItem = $('.menu_list').children().eq(menuList - 2);
-    let a = menuItem.removeClass().addClass('menu_more');
-    let b = a.find('.menu_item_title').removeClass().addClass('menu_more_title');
-    let c = a.find('.menu_item_list').removeClass().addClass('menu_more_list');
-    $('#more').append(menuItem);
+    let moreList = $('#more').children().length;
+    let moreItem = $('#more').children().eq(moreList - 1);
+    let a = moreItem.removeClass().addClass('menu_item');
+    let b = a.find('.menu_more_title').removeClass().addClass('menu_item_title');
+    let c = a.find('.menu_more_list').removeClass().addClass('menu_item_list');
+    $('.menu_list').append(moreItem);
     return counter;
-  }
+  } */
 
-    //console.log(counter + 'inner');
-
-    $('.menu_item_list').parent().addClass('check');
+  $('.menu_item_list').parent().addClass('check');
   $('.menu_more_list').parent().find('.menu_more_title').addClass('check');
 
   $('.menu_more').click(function() {
