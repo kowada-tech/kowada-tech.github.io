@@ -346,8 +346,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 * {
-  font-family: "Inter";
-  /* letter-spacing: 0.2; */
+  font-family: "AGKornelia";
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -364,8 +363,6 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0 auto;
 } */
 .title {
-  font-family: "Noto Sans";
-  /* letter-spacing: 0.2; */
   font-weight: 600;
   text-align: center;
   color: #23759C;
@@ -384,7 +381,7 @@ input[type=number]::-webkit-inner-spin-button {
   bottom: 0px;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 2px;
   margin: auto;
   width: 0%;
   background-color: #3193C1;
@@ -404,23 +401,36 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .btn {
+  position: relative;
+  overflow: hidden;
   padding: 8px 27px;
   background: -webkit-gradient(linear, left top, right top, from(#237BA3), to(#208DBC));
   background: linear-gradient(90deg, #237BA3 0%, #208DBC 100%);
   -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  font-family: "Noto Sans";
-  /* letter-spacing: 0.2; */
   font-weight: 600;
   color: #fff;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
-.btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#208dbc), to(#26a2d7));
-  background: linear-gradient(90deg, #208dbc 0%, #26a2d7 100%);
-  color: #eef7f9;
+.btn::before {
+  content: "";
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #A5D2E7;
+  opacity: 0.3;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.btn:hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .wrapper {
@@ -551,7 +561,7 @@ input[type=number]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 .header .menu_item_title {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   padding: 7px 25px 7px 12px;
   text-transform: uppercase;
@@ -780,6 +790,10 @@ input[type=number]::-webkit-inner-spin-button {
           transform: translateY(-50%);
   z-index: 1;
 }
+.carousel .icon-next:hover,
+.carousel .icon-prev:hover {
+  color: #b5bdc1;
+}
 .carousel .icon-next {
   right: 43px;
 }
@@ -925,22 +939,21 @@ input[type=number]::-webkit-inner-spin-button {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-left: 24px;
-  padding: 4px 4px 4px 24px;
-  background-color: #fff;
-  border-radius: 12px;
-  border: 2px solid #fff;
-}
-.searchForms_input:focus-within {
-  border: 2px solid #23759C;
 }
 .searchForms_input input {
   padding-right: 10px;
-  border: none;
+  padding: 4px 4px 4px 24px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #fff;
   text-align: left;
   color: #607D8B;
 }
+.searchForms_input input:focus-within {
+  border: 1px solid #3CA9DD;
+}
 .searchForms_input #expert {
-  width: 140px;
+  width: 180px;
 }
 .searchForms_input #slab {
   width: 180px;

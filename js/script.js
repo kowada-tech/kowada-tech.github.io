@@ -160,7 +160,4 @@ $(document).ready(function() {
   $('.menu_more').click(function() {
     $(this).toggleClass('active');
   });
-    
-
-
 });
