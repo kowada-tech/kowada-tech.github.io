@@ -30,6 +30,16 @@
 
 @font-face {
     font-family: 'Philosopher';
+    src: local('Philosopher Regular'), local('Philosopher-Regular'),
+        url('Philosopher-Regular.woff2') format('woff2'),
+        url('Philosopher-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Philosopher';
     src: local('Philosopher Bold'), local('Philosopher-Bold'),
         url('Philosopher-Bold.woff2') format('woff2'),
         url('Philosopher-Bold.woff') format('woff');
@@ -53,6 +63,36 @@
     src: local('AGKornelia Bold'), local('AGKornelia-Bold'),
         url('AGKornelia-Bold.woff2') format('woff2'),
         url('AGKornelia-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alice';
+    src: local('Alice Regular'), local('Alice-Regular'),
+        url('Alice-Regular.woff2') format('woff2'),
+        url('Alice-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+        url('Montserrat-SemiBold.woff2') format('woff2'),
+        url('Montserrat-SemiBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

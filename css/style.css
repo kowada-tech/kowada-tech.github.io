@@ -346,7 +346,8 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 * {
-  font-family: "AGKornelia";
+  font-family: "Inter";
+  /* letter-spacing: 0.2; */
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -363,14 +364,35 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0 auto;
 } */
 .title {
-  font-family: "AGKornelia";
+  font-family: "Noto Sans";
+  /* letter-spacing: 0.2; */
   font-weight: 600;
   text-align: center;
   color: #23759C;
 }
 .title_sections {
+  position: relative;
+  display: inline-block;
   font-size: 28px;
   line-height: 40px;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.title_sections::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  margin: auto;
+  width: 0%;
+  background-color: #3193C1;
+  -webkit-transition: width 300ms ease-out;
+  transition: width 300ms ease-out;
+}
+.title_sections:hover::after {
+  width: 100%;
 }
 .title_middle {
   font-size: 20px;
@@ -389,6 +411,7 @@ input[type=number]::-webkit-inner-spin-button {
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   font-family: "Noto Sans";
+  /* letter-spacing: 0.2; */
   font-weight: 600;
   color: #fff;
   -webkit-transition: all 0.5s;
@@ -1075,7 +1098,7 @@ input[type=number]::-webkit-inner-spin-button {
   border-right: none;
 }
 .services_item .title_sections {
-  display: block;
+  /* display: block; */
   margin-bottom: 15px;
   color: #000;
 }
@@ -1265,20 +1288,25 @@ input[type=number]::-webkit-inner-spin-button {
   transition: all 0.5s;
 }
 .museum_item {
-  margin: 25px 16px 0px 16px;
-  width: calc((100% - 128px) / 4);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+  margin-top: 10px;
+  padding: 16px;
+  width: 25%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 1px solid #fff;
+  border-radius: 8px;
 }
 .museum_item:hover {
   /* animation: heartbeat 1.5s ease infinite; */
+  border: 1px solid #e3f1f4;
+  border-radius: 8px;
+  /*  img {
+       animation: heartbeat 1.5s ease infinite;
+
+   } */
 }
 .museum_item:hover .title {
   color: #3193C1;
-}
-.museum_item:hover img {
-  -webkit-animation: heartbeat 1.5s ease infinite;
-          animation: heartbeat 1.5s ease infinite;
 }
 .museum_item .title {
   padding: 20px 20px 10px 20px;
