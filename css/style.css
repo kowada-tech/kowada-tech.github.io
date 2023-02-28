@@ -509,7 +509,7 @@ input[type=number]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 .header .menu_item_title {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   padding: 7px 25px 7px 12px;
   text-transform: uppercase;
@@ -676,7 +676,7 @@ input[type=number]::-webkit-inner-spin-button {
           transform: scale(1.1);
 }
 .header .basket:hover .icon-basket {
-  color: #650b47;
+  color: #3193C1;
 }
 .header .basket .icon-basket {
   font-size: 31px;
@@ -697,6 +697,24 @@ input[type=number]::-webkit-inner-spin-button {
   color: #FFFFFF;
   -webkit-animation: jump 1s ease infinite;
           animation: jump 1s ease infinite;
+}
+.header .login {
+  display: block;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.header .login:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header .login:hover .icon-login {
+  color: #3193C1;
+}
+.header .login .icon-login {
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .carousel {
@@ -912,7 +930,7 @@ input[type=number]::-webkit-inner-spin-button {
   transition: all 0.5s;
 }
 .publications a:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 .publications_item {
   display: block;
@@ -925,14 +943,14 @@ input[type=number]::-webkit-inner-spin-button {
   transition: all 0.5s;
 }
 .publications_item:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 .publications_item:hover img {
   -webkit-animation: heartbeat 1.5s ease infinite;
           animation: heartbeat 1.5s ease infinite;
 }
 .publications_item:hover .publications_descr {
-  color: #650b47;
+  color: #3193C1;
 }
 .publications_item .title {
   margin-top: 30px;
@@ -1000,7 +1018,7 @@ input[type=number]::-webkit-inner-spin-button {
           box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.15);
 }
 .news_item:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 .news_img {
   width: 100%;
@@ -1025,7 +1043,7 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: left;
 }
 .news a:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 
 .services .wrapper {
@@ -1055,7 +1073,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #000;
 }
 .services_item .title_sections:hover {
-  color: #650b47;
+  color: #3193C1;
 }
 .services_list {
   -webkit-box-flex: 1;
@@ -1080,20 +1098,20 @@ input[type=number]::-webkit-inner-spin-button {
   color: #23759C;
 }
 .services_link:hover {
-  color: #650b47;
+  color: #3193C1;
 }
 .services_link:hover .services_arrow {
   -webkit-animation: services_arrow 1s linear infinite;
           animation: services_arrow 1s linear infinite;
 }
 .services_link:hover .services_arrow div {
-  background-color: #650b47;
+  background-color: #3193C1;
 }
 .services_link:hover .services_arrow div::after {
-  background-color: #650b47;
+  background-color: #3193C1;
 }
 .services_link:hover .services_arrow div::before {
-  background-color: #650b47;
+  background-color: #3193C1;
 }
 .services_arrow {
   cursor: pointer;
@@ -1164,7 +1182,7 @@ input[type=number]::-webkit-inner-spin-button {
   transition: all 0.5s;
 }
 .events_item:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 .events_item:hover img {
   -webkit-filter: brightness(0.9);
@@ -1175,10 +1193,10 @@ input[type=number]::-webkit-inner-spin-button {
   display: block;
 }
 .events_item:hover .events_descr {
-  color: #650b47;
+  color: #3193C1;
 }
 .events_item:hover .events_date {
-  color: #650b47;
+  color: #3193C1;
 }
 .events_item .title {
   padding: 20px 20px 10px 20px;
@@ -1234,7 +1252,7 @@ input[type=number]::-webkit-inner-spin-button {
   border: 1px solid #23759C;
   -webkit-box-shadow: 5px 5px 13px -5px rgba(34, 60, 80, 0.6);
           box-shadow: 5px 5px 13px -5px rgba(34, 60, 80, 0.6);
-  color: #650b47;
+  color: #3193C1;
 }
 .events_lecture {
   margin: 25px 12px 0px 12px;
@@ -1244,7 +1262,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0px;
 }
 .events a:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 
 .museum {
@@ -1263,7 +1281,7 @@ input[type=number]::-webkit-inner-spin-button {
   /* animation: heartbeat 1.5s ease infinite; */
 }
 .museum_item:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 .museum_item:hover img {
   -webkit-animation: heartbeat 1.5s ease infinite;
@@ -1339,7 +1357,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #fff;
 }
 .museum a:hover .title {
-  color: #650b47;
+  color: #3193C1;
 }
 
 .footer {
