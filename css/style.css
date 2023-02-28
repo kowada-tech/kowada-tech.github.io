@@ -346,7 +346,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 * {
-  font-family: "Inter";
+  font-family: "AGKornelia";
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -363,7 +363,7 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0 auto;
 } */
 .title {
-  font-family: "Noto Sans";
+  font-family: "AGKornelia";
   font-weight: 600;
   text-align: center;
   color: #23759C;
@@ -387,7 +387,7 @@ input[type=number]::-webkit-inner-spin-button {
   background: linear-gradient(90deg, #237BA3 0%, #208DBC 100%);
   -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+  border-radius: 6px;
   font-family: "Noto Sans";
   font-weight: 600;
   color: #fff;

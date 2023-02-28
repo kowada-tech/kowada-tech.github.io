@@ -38,5 +38,25 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'AGKornelia';
+    src: local('AGKornelia'), local('AGKornelia'),
+        url('AGKornelia.woff2') format('woff2'),
+        url('AGKornelia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AGKornelia';
+    src: local('AGKornelia Bold'), local('AGKornelia-Bold'),
+        url('AGKornelia-Bold.woff2') format('woff2'),
+        url('AGKornelia-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
