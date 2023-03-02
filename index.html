@@ -13,8 +13,8 @@
 <body>
     <div class="main_page">
         <header class="header">
-            <div class="page_wrap">
-                <div class="wrapper">
+            <nav>
+                <div class="page_wrap">
                     <a href="#" class="logo">
                         <div class="logo_img">
                             <span class="icon-logo"></span>
@@ -27,20 +27,21 @@
                             ЦИКЦ
                         </span>
                     </a>
-                    <div class="langMenu">
+                    <div class="langMenu check">
                         <div class="langMenu_picture">
                             <img src="img/lang/ru.svg" alt="Russian" class="langMenu_img russian_pic active">
                             <img src="img/lang/en.svg" alt="English" class="langMenu_img english_pic">
                         </div>
                         <ul class="langMenu_list">
-                            <li class="langMenu_item">
+                            <li class="langMenu_item russian">
                                 <img src="img/lang/ru.svg" alt="Russian" class="langMenu_icon russian">
+                                <div class="langMenu_descr">Русский</div>
                             </li>
-                            <li class="langMenu_item">
+                            <li class="langMenu_item english">
                                 <img src="img/lang/en.svg" alt="English" class="langMenu_icon english">
+                                <div class="langMenu_descr">English</div>
                             </li>
                         </ul>
-                       
                     </div>
                     
                     <div class="menu">
@@ -150,7 +151,7 @@
                             <li class="menu_item menu_item_more">
                                 <p class="menu_item_title">Еще</p>
                                 <ul class="menu_item_list" id="more">
-                                     <li class="menu_more">
+                                    <li class="menu_more">
                                         <p class="menu_more_title">Публикации</p>
                                         <ul class="menu_more_list">
                                             <li class="menu_item_point">
@@ -188,7 +189,7 @@
                             </li>
                         </ul>
                     </div>
-
+    
                     <div class="socials">
                         <a href="#" class="socials_link">
                             <span class="icon-whatsapp"></span>
@@ -203,17 +204,19 @@
                             8 926 123 0 321
                         </a>
                     </div>
-
-                    <a href="#" class="basket">
-                        <span class="icon-basket"></span>
-                        <span class="basket_value">3</span>
-                    </a>
-
-                    <a href="#" class="login">
-                        <span class="icon-login"></span>
-                    </a>
+    
+                    <div class="userbtns">
+                        <a href="#" class="basket">
+                            <span class="icon-basket"></span>
+                            <span class="basket_value">3</span>
+                        </a>
+    
+                        <a href="#" class="login">
+                            <span class="icon-login"></span>
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </header>
         <section class="carousel">
             <div class="page_wrap">
@@ -331,86 +334,83 @@
         </section>
         <section class="searchForms">
             <div class="page_wrap">
-                <div class="wrapper">
-                    <form class="searchForms_form" action="#">
-                        <label for="expert">Проверить экспертное заключение:</label>
-                        <div class="searchForms_input">
-                            <input id="expert" type="text" placeholder="Номер">
-                            <button class="searchForms_btn btn">Найти</button>
-                        </div>
-                    </form>
-                    <form class="searchForms_form" action="#">
-                        <label for="slab">Проверить слаб / банкноту:</label>
-                        <div class="searchForms_input">
-                            <input id="slab" type="text" placeholder="Номер">
-                            <button class="searchForms_btn btn">Найти</button>
-                        </div>
-                    </form>
-                </div>
+                
+                <form class="searchForms_form" action="#">
+                    <label for="expert">Проверить экспертное заключение:</label>
+                    <div class="searchForms_input">
+                        <input id="expert" type="text" placeholder="Номер">
+                        <button class="searchForms_btn btn">Найти</button>
+                    </div>
+                </form>
+                <form class="searchForms_form" action="#">
+                    <label for="slab">Проверить слаб / банкноту:</label>
+                    <div class="searchForms_input">
+                        <input id="slab" type="text" placeholder="Номер">
+                        <button class="searchForms_btn btn">Найти</button>
+                    </div>
+                </form>
+               
             </div>
         </section>
 
         <section class="services">
             <div class="page_wrap">
-                <div class="wrapper">
-                    <div class="services_item">
-                        <a href="#">
-                            <h3 class="title title_sections">Услуги и сервисы</h3>
+                <div class="services_item">
+                    <a href="#">
+                        <h3 class="title title_sections">Услуги и сервисы</h3>
+                    </a>
+                    <div class="services_list">
+                        <a href="#" class="services_link">Услуги
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
                         </a>
-                        <div class="services_list">
-                            <a href="#" class="services_link">Услуги
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                            <a href="#" class="services_link">Наши сервисы
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="services_img">
-                            <p>
-                                <img src="img/services/services_1.png" alt="">
-                            </p>
-                        </div>
+                        <a href="#" class="services_link">Наши сервисы
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="services_item">
-                        <a href="#">
-                            <h3 class="title title_sections">Руководство для начинающих</h3>
-                        </a>
-                        <div class="services_list">
-                            <a href="#" class="services_link">Как пользоваться каталогом
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="services_img">
-                            <p>
-                                <img src="img/services/services_2.png" alt="">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="services_item">
-                        <a href="#">
-                            <h3 class="title title_sections">База данных</h3>
-                        </a>
-                        <div class="services_list">
-                            <a href="#" class="services_link">Посмотреть цены на монеты
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="services_img">
-                            <p>
-                                <img src="img/services/services_3.png" alt="">
-                            </p>
-                        </div>
+                    <div class="services_img">
+                        <p>
+                            <img src="img/services/services_1.png" alt="">
+                        </p>
                     </div>
                 </div>
-
+                <div class="services_item">
+                    <a href="#">
+                        <h3 class="title title_sections">Руководство для начинающих</h3>
+                    </a>
+                    <div class="services_list">
+                        <a href="#" class="services_link">Как пользоваться каталогом
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services_img">
+                        <p>
+                            <img src="img/services/services_2.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <a href="#">
+                        <h3 class="title title_sections">База данных</h3>
+                    </a>
+                    <div class="services_list">
+                        <a href="#" class="services_link">Посмотреть цены на монеты
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services_img">
+                        <p>
+                            <img src="img/services/services_3.png" alt="">
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -471,7 +471,7 @@
 
         <section class="publications">
             <div class="page_wrap">
-                <a href="#">
+                <a href="/publications.html">
                     <h2 class="title title_sections">Публикации</h2>
                 </a>
                 <div class="wrapper">
@@ -567,7 +567,7 @@
         </section>
         <section class="museum">
             <div class="page_wrap">
-                <a href="#">
+                <a href="/museum.html">
                     <h2 class="title title_sections">Музей подделок</h2>
                 </a>
                 <div class="wrapper">
@@ -648,219 +648,213 @@
         </section>
         <section class="services">
             <div class="page_wrap">
-                <div class="wrapper">
-                    <div class="services_item">
-                        <a href="#">
-                            <h3 class="title title_sections">Услуги</h3>
+                <div class="services_item">
+                    <a href="#">
+                        <h3 class="title title_sections">Услуги</h3>
+                    </a>
+                    <div class="services_list">
+                        <a href="#" class="services_link">Отдел нумизматики
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
                         </a>
-                        <div class="services_list">
-                            <a href="#" class="services_link">Отдел нумизматики
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                            <a href="#" class="services_link">Отдел фалеристики
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                            <a href="#" class="services_link">Другие культурные ценности
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="services_img">
-                            <p>
-                                <img src="img/services/services_1.png" alt="">
-                            </p>
-                        </div>
+                        <a href="#" class="services_link">Отдел фалеристики
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
+                        <a href="#" class="services_link">Другие культурные ценности
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="services_item">
-                        <a href="#">
-                            <h3 class="title title_sections">База данных</h3>
-                        </a>
-                        <div class="services_list">
-                            <a href="#" class="services_link">Реестр экспертиз
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                            <a href="#" class="services_link">Музей подделок
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="services_img">
-                            <p>
-                                <img src="img/services/services_2.png" alt="">
-                            </p>
-                        </div>
+                    
+                    <div class="services_img">
+                        <p>
+                            <img src="img/services/services_1.png" alt="">
+                        </p>
                     </div>
-                    <div class="services_item">
-                        <a href="#">
-                            <h3 class="title title_sections">Контакты</h3>
+                </div>
+                <div class="services_item">
+                    <a href="#">
+                        <h3 class="title title_sections">База данных</h3>
+                    </a>
+                    <div class="services_list">
+                        <a href="#" class="services_link">Реестр экспертиз
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
                         </a>
-                        <div class="services_list">
-                            <a href="#" class="services_link">Форма обратной связи
-                                <div class="services_arrow">
-                                    <div></div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="services_img">
-                            <p>
-                                <img src="img/services/services_3.png" alt="">
-                            </p>
-                        </div>
+                        <a href="#" class="services_link">Музей подделок
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services_img">
+                        <p>
+                            <img src="img/services/services_2.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="services_item">
+                    <a href="#">
+                        <h3 class="title title_sections">Контакты</h3>
+                    </a>
+                    <div class="services_list">
+                        <a href="#" class="services_link">Форма обратной связи
+                            <div class="services_arrow">
+                                <div></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services_img">
+                        <p>
+                            <img src="img/services/services_3.png" alt="">
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <footer class="footer">
             <div class="page_wrap">
-                <div class="wrapper">
-                    <div class="footer_about">
-                        <a href="#" class="logo">
-                            <div class="logo_img">
-                                <span class="icon-logofoot"></span>
-                            </div>
-                            <span class="logo_title">
-                                Центр исследований 
-                                <br>культурных ценностей
-                            </span>
-                        </a>
-                        <div class="footer_text">Официальная экспертиза монет и
-                            <br>антиквариата ЦИКЦ (альтернатива ГИМ)</div>
-                        <div class="footer_decsr">© 1999-2021 Центр исследований культурных ценностей</div>
+                <div class="footer_about">
+                    <a href="#" class="logo">
+                        <div class="logo_img">
+                            <span class="icon-logofoot"></span>
+                        </div>
+                        <span class="logo_title">
+                            Центр исследований 
+                            <br>культурных ценностей
+                        </span>
+                    </a>
+                    <div class="footer_text">Официальная экспертиза монет и
+                        <br>антиквариата ЦИКЦ (альтернатива ГИМ)</div>
+                    <div class="footer_decsr">© 1999-2021 Центр исследований культурных ценностей</div>
+                </div>
+                <div class="footer_col_left">
+                    <div class="footer_list">
+                        <h3 class="title title_small">Услуги</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Отдел нумизматики</a>
+                            </liclass=>
+                            <li>
+                                <a href="#">Отдел фалеристики</a>
+                            </li>
+                            <li>
+                                <a href="#">Другие культурные ценности</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="footer_col_left">
-                        <div class="footer_list">
-                            <h3 class="title title_small">Услуги</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Отдел нумизматики</a>
-                                </liclass=>
-                                <li>
-                                    <a href="#">Отдел фалеристики</a>
-                                </li>
-                                <li>
-                                    <a href="#">Другие культурные ценности</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer_list">
-                            <h3 class="title title_small">Эксперты</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Эксперты отдела нумизматики</a>
-                                </lis=>
-                                <li>
-                                    <a href="#">Эксперты отдела фалеристики</a>
-                                </li>
-                                <li>
-                                    <a href="#">Эксперты по другим культурным ценостям</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer_list">
-                            <h3 class="title title_small">База данных</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Реестр экспертиз</a>
-                                </li>
-                                <li>
-                                    <a href="#">Музей подделок</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="footer_list">
+                        <h3 class="title title_small">Эксперты</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Эксперты отдела нумизматики</a>
+                            </lis=>
+                            <li>
+                                <a href="#">Эксперты отдела фалеристики</a>
+                            </li>
+                            <li>
+                                <a href="#">Эксперты по другим культурным ценостям</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="footer_col_right">
-                        <div class="footer_list">
-                            <h3 class="title title_small">Публикации</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Новости</a>
-                                </li>
-                                <li>
-                                    <a href="#">Публикации</a>
-                                </li>
-                                <li>
-                                    <a href="#">Лекции</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer_list">
-                            <h3 class="title title_small">Магазин</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Сувенирная продукция</a>
-                                </li>
-                                <li>
-                                    <a href="#">Доставка и оплата</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer_list">
-                            <h3 class="title title_small">ЦИКЦ</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">О нас</a>
-                                </li>
-                                <li>
-                                    <a href="#">Эксперты</a>
-                                </li>
-                                <li>
-                                    <a href="#">Кодекс чести эксперта</a>
-                                </li>
-                                <li>
-                                    <a href="#">Благотворительность</a>
-                                </li>
-                                <li>
-                                    <a href="#">Партнёры</a>
-                                </li>
-                                <li>
-                                    <a href="#">Контакты</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer_contacts">
-                        <h3 class="title title_small">Контакты</h3>
-                        <div class="footer_decsr">
-                            Номер для отправки фото 
-                            <br>Viber, WhatsApp, MMS:
-                        </div>
-                        <div class="socials">
-                            <a href="#" class="socials_link">
-                                <span class="icon-whatsapp"></span>
-                            </a>
-                            <a href="#" class="socials_link">
-                                <span class="icon-viber"></span>
-                            </a>
-                            <a href="#" class="socials_link">
-                                <span class="icon-telegram"></span>
-                            </a>
-                            <a href="tel:+79261230321" class="socials_phone">
-                                8 926 123 0 321
-                            </a>
-                        </div>
-                        <div class="footer_decsr">
-                            Адрес электронной
-                            <br>корреспонденции:
-                        </div>
-                        <div class="footer_email">
-                            <span class="icon-email"></span>
-                            <a href="mailto:info@numexpert.ru" class="socials_link">
-                                info@numexpert.ru
-                            </a>
-                        </div>
+                    <div class="footer_list">
+                        <h3 class="title title_small">База данных</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Реестр экспертиз</a>
+                            </li>
+                            <li>
+                                <a href="#">Музей подделок</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                
-
+                <div class="footer_col_right">
+                    <div class="footer_list">
+                        <h3 class="title title_small">Публикации</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Публикации</a>
+                            </li>
+                            <li>
+                                <a href="#">Лекции</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <h3 class="title title_small">Магазин</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Сувенирная продукция</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_list">
+                        <h3 class="title title_small">ЦИКЦ</h3>
+                        <ul>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Эксперты</a>
+                            </li>
+                            <li>
+                                <a href="#">Кодекс чести эксперта</a>
+                            </li>
+                            <li>
+                                <a href="#">Благотворительность</a>
+                            </li>
+                            <li>
+                                <a href="#">Партнёры</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_contacts">
+                    <h3 class="title title_small">Контакты</h3>
+                    <div class="footer_decsr">
+                        Номер для отправки фото 
+                        <br>Viber, WhatsApp, MMS:
+                    </div>
+                    <div class="socials">
+                        <a href="#" class="socials_link">
+                            <span class="icon-whatsapp"></span>
+                        </a>
+                        <a href="#" class="socials_link">
+                            <span class="icon-viber"></span>
+                        </a>
+                        <a href="#" class="socials_link">
+                            <span class="icon-telegram"></span>
+                        </a>
+                        <a href="tel:+79261230321" class="socials_phone">
+                            8 926 123 0 321
+                        </a>
+                    </div>
+                    <div class="footer_decsr">
+                        Адрес электронной
+                        <br>корреспонденции:
+                    </div>
+                    <div class="footer_email">
+                        <span class="icon-email"></span>
+                        <a href="mailto:info@numexpert.ru" class="footer_email_link">
+                            info@numexpert.ru
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

@@ -16,11 +16,11 @@ $(document).ready(function() {
 
   $('.langMenu_picture').click(function(){
     $(this).toggleClass('active');
-    $('.langMenu_list').toggleClass('active');
+    //$('.langMenu_list').toggleClass('active');
 
   });
 
-  $('.langMenu_icon').click(function(){
+  $('.langMenu_item').click(function(){
     if ($(this).hasClass('russian')){
       if ($(this).parents().find('.russian_pic').hasClass('active')) {
         $(this).parents().find('.langMenu_picture').toggleClass('active');
@@ -29,19 +29,19 @@ $(document).ready(function() {
         $(this).parents().find('.russian_pic').addClass('active');
         $(this).parents().find('.english_pic').removeClass('active');
         $(this).parents().find('.langMenu_picture').toggleClass('active');
-        $(this).parents().find('.langMenu_list').toggleClass('active');
+        //$(this).parents().find('.langMenu_list').toggleClass('active');
       }
       
     }
     if ($(this).hasClass('english')){
       if ($(this).parents().find('.english_pic').hasClass('active')) {
         $(this).parents().find('.langMenu_picture').toggleClass('active');
-        $(this).parents().find('.langMenu_list').toggleClass('active');
+        //$(this).parents().find('.langMenu_list').toggleClass('active');
       } else {
         $(this).parents().find('.english_pic').addClass('active');
         $(this).parents().find('.russian_pic').removeClass('active');
         $(this).parents().find('.langMenu_picture').toggleClass('active');
-        $(this).parents().find('.langMenu_list').toggleClass('active');
+        //$(this).parents().find('.langMenu_list').toggleClass('active');
       }
     }
     
@@ -159,5 +159,14 @@ $(document).ready(function() {
 
   $('.menu_more').click(function() {
     $(this).toggleClass('active');
+  });
+  
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 72) {
+      $('nav').addClass('shadow');
+    }
+    if ($(window).scrollTop() < 72) {
+      $('nav').removeClass('shadow');
+    }
   });
 });
