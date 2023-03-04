@@ -449,6 +449,9 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
 }
 
+.pathway {
+  margin-bottom: 20px;
+}
 .pathway_link {
   margin-right: 20px;
   position: relative;
@@ -472,7 +475,6 @@ input[type=number]::-webkit-inner-spin-button {
 .line_big {
   color: #CFD8DC;
   width: 100%;
-  size: 1px;
 }
 
 .arrow {
@@ -514,10 +516,11 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .first_title {
-  padding-top: 40px;
+  padding: 40px 0px;
+  border-bottom: 1px solid #CFD8DC;
 }
-.first_title .line_big {
-  margin-top: 40px;
+.first_title.path {
+  padding: 30px 0px 35px 0px;
 }
 
 .pagination {
@@ -539,12 +542,21 @@ input[type=number]::-webkit-inner-spin-button {
   border-radius: 8px;
 }
 .pagination_number:hover {
+  color: #3193C1;
   background-color: #E3F1F4;
 }
 .pagination .current {
+  color: #000;
   background-color: #E3F1F4;
 }
+.pagination .current:hover {
+  color: #000;
+}
+.pagination .dots {
+  color: #000;
+}
 .pagination .dots:hover {
+  color: #000;
   background-color: #fff;
 }
 
@@ -1596,15 +1608,19 @@ article em {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.museum .danger {
+.museum a:hover .title {
+  color: #3193C1;
+}
+
+.danger {
   padding: 5px 20px 10px 20px;
 }
-.museum .danger_descr {
+.danger_descr {
   margin-bottom: 10px;
   font-size: 16px;
   text-align: center;
 }
-.museum .danger_scale {
+.danger_scale {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1612,7 +1628,7 @@ article em {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.museum .danger_circle {
+.danger_circle {
   position: relative;
   margin: 0px 3px;
   width: 22px;
@@ -1620,19 +1636,19 @@ article em {
   background-color: #ECEFF1;
   border-radius: 100%;
 }
-.museum .danger_circle.yellow {
+.danger_circle.yellow {
   background-color: #F4BB0A;
 }
-.museum .danger_circle.red {
+.danger_circle.red {
   background-color: #E03737;
 }
-.museum .danger_circle.green {
+.danger_circle.green {
   background-color: #A7D24B;
 }
-.museum .danger_circle.orange {
+.danger_circle.orange {
   background-color: #F97D37;
 }
-.museum .danger_circle.symbol::before {
+.danger_circle.symbol::before {
   content: "\e900";
   font-family: "icomoon", sans-serif;
   position: absolute;
@@ -1644,8 +1660,187 @@ article em {
   font-weight: 700;
   color: #fff;
 }
-.museum a:hover .title {
+
+.filter {
+  margin: 30px 0px;
+  border-bottom: 1px solid #CFD8DC;
+}
+.filter .page_wrap {
+  width: 1580px;
+}
+
+.metal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.metal_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #23759C;
+  font-weight: 600;
+}
+.metal_item:hover {
   color: #3193C1;
+  background-color: #E3F1F4;
+}
+.metal_item:hover span {
+  color: #3193C1;
+}
+.metal_item.active {
+  color: #000;
+  background-color: #E3F1F4;
+}
+.metal_item.active:hover {
+  color: #000;
+}
+.metal_item span {
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #23759C;
+  font-weight: 600;
+}
+.metal_item img {
+  border-radius: 4px;
+}
+
+.kings {
+  margin: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.kings_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 185px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.kings_item:hover {
+  background-color: #E3F1F4;
+}
+.kings_item:hover .kings_title {
+  color: #3193C1;
+}
+.kings_item.active {
+  background-color: #E3F1F4;
+}
+.kings_item.active .kings_title {
+  color: #000;
+}
+.kings_item.active:hover .kings_title {
+  color: #000;
+}
+.kings_title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #23759C;
+  font-weight: 600;
+}
+
+.gallery {
+  padding: 135px 0px 30px 0px;
+}
+.gallery .page_wrap {
+  width: 1090px;
+  padding: 0px 10px;
+}
+.gallery_item {
+  padding: 30px 0px;
+  border-bottom: 1px solid #CFD8DC;
+}
+.gallery_item:last-child {
+  border-bottom: none;
+}
+.gallery_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery_coin {
+  width: calc((100% - 30px) / 2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.gallery_pict {
+  width: 100%;
+  cursor: pointer;
+}
+.gallery .profile {
+  margin: 0 auto;
+  width: 80%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.gallery .title {
+  margin-top: 5px;
+  text-align: left;
+}
+.gallery .danger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.gallery .danger_descr {
+  margin-bottom: 0px;
+}
+.gallery_descr {
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 160%;
+  color: #263238;
+  text-align: left;
 }
 
 .banner {
