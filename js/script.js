@@ -163,10 +163,16 @@ $(document).ready(function() {
   
   $(window).scroll(function () {
     if ($(window).scrollTop() >= 72) {
-      $('nav').addClass('shadow');
+      $('.navigation').addClass('media');
+      $('.icon-logo').addClass('media');
+      $('.navigation .logo_title').addClass('media');
+      $('.langMenu_picture').addClass('media');
     }
     if ($(window).scrollTop() < 72) {
-      $('nav').removeClass('shadow');
+      $('.navigation').removeClass('media');
+      $('.icon-logo').removeClass('media');
+      $('.navigation .logo_title').removeClass('media');
+      $('.langMenu_picture').removeClass('media');
     }
   });
 });

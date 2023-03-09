@@ -564,15 +564,26 @@ input[type=number]::-webkit-inner-spin-button {
   position: relative;
   min-height: 72px;
 }
-.header nav {
+.header .navigation {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #fff;
   min-height: 72px;
   width: 100%;
-  padding: 5px 5px;
+  padding: 5px 0px;
   z-index: 5;
 }
-.header .shadow {
+.header .navigation.media {
+  padding: 0px;
+  min-height: 50px;
   -webkit-box-shadow: 0 2px 7px #A5D2E7;
           box-shadow: 0 2px 7px #A5D2E7;
 }
@@ -618,9 +629,15 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-filter: drop-shadow(2px 3px 3px rgba(35, 117, 156, 0.2));
           filter: drop-shadow(2px 3px 3px rgba(35, 117, 156, 0.2));
 }
+.header .logo_img {
+  line-height: 100%;
+}
 .header .logo .icon-logo {
   color: #000000;
   font-size: 51px;
+}
+.header .logo .icon-logo.media {
+  font-size: 42px;
 }
 .header .logo_title {
   margin-left: 10px;
@@ -631,14 +648,23 @@ input[type=number]::-webkit-inner-spin-button {
   color: #000;
   text-align: left;
 }
-.header .logo_title_1280 {
+.header .logo_title.mini {
+  display: none;
+}
+.header .logo_title.media.mini {
+  display: block;
+}
+.header .logo_title.media.big {
   display: none;
 }
 .header .langMenu {
   position: relative;
   margin-left: 15px;
-  padding: 10px 0px;
+  padding: 4px 0px;
   cursor: pointer;
+}
+.header .langMenu:hover .langMenu_picture {
+  background-color: #EEF7F9;
 }
 .header .langMenu:hover .langMenu_list {
   display: block;
@@ -648,8 +674,12 @@ input[type=number]::-webkit-inner-spin-button {
   padding: 10px 4px 10px 16px;
   width: 70px;
   height: 40px;
-  background: #EEF7F9;
+  /* background: #EEF7F9; */
+  background-color: #fff;
   border-radius: 8px;
+}
+.header .langMenu_picture.media {
+  background-color: #fff;
 }
 .header .langMenu_img {
   display: none;
@@ -661,7 +691,7 @@ input[type=number]::-webkit-inner-spin-button {
 .header .langMenu_list {
   display: none;
   position: absolute;
-  top: 54px;
+  top: 48px;
   left: 0;
   padding: 7px 0px;
   background: #FFFFFF;
@@ -711,7 +741,7 @@ input[type=number]::-webkit-inner-spin-button {
 .header .menu_item {
   position: relative;
   font-weight: normal;
-  padding: 12px 0px;
+  padding: 4px 0px;
   cursor: pointer;
 }
 .header .menu_item_title {
@@ -736,7 +766,7 @@ input[type=number]::-webkit-inner-spin-button {
 .header .menu_item_list {
   display: none;
   position: absolute;
-  top: 54px;
+  top: 46px;
   left: -5px;
   padding: 12px 0px;
   background-color: #fff;
@@ -1052,7 +1082,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #E3F1F4;
 }
 .searchForms .page_wrap {
-  padding: 38px 0px;
+  padding: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1222,11 +1252,18 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: left;
 }
 .publications_text {
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 8px;
   line-height: 160%;
   color: #263238;
   text-align: left;
+}
+.publications .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .publications_link {
   display: -webkit-inline-box;
@@ -1265,7 +1302,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .article {
-  margin-top: 30px;
   margin-bottom: 16px;
 }
 .article .page_wrap {
@@ -1276,7 +1312,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 article {
-  padding: 20px;
+  padding: 10px 20px;
 }
 article h2 {
   margin: 20px 0px;
@@ -1662,7 +1698,7 @@ article em {
 }
 
 .filter {
-  margin: 30px 0px;
+  margin-top: 30px;
   border-bottom: 1px solid #CFD8DC;
 }
 .filter .page_wrap {
@@ -1776,7 +1812,7 @@ article em {
 }
 
 .gallery {
-  padding: 135px 0px 30px 0px;
+  padding-bottom: 30px;
 }
 .gallery .page_wrap {
   width: 1090px;
@@ -1837,7 +1873,6 @@ article em {
 }
 .gallery_descr {
   margin-top: 5px;
-  font-size: 18px;
   line-height: 160%;
   color: #263238;
   text-align: left;
