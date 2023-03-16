@@ -16,8 +16,6 @@ $(document).ready(function() {
 
   $('.langMenu_picture').click(function(){
     $(this).toggleClass('active');
-    //$('.langMenu_list').toggleClass('active');
-
   });
 
   $('.langMenu_item').click(function(){
@@ -50,15 +48,30 @@ $(document).ready(function() {
   $('.hamburger').click(function(){
     if ($('.hamburger').hasClass('active')){
       $('.hamburger').removeClass('active');
-      $('.hamburger__title_none').hide();
-      $('.hamburger__title').show();
+      $('.hamburger_title.close').hide();
+      $('.hamburger_title.open').show();
       $('.menu').removeClass('active');
       
     } else {
       $('.hamburger').toggleClass('active');
-      $('.hamburger__title').hide();
-      $('.hamburger__title_none').show();
+      $('.hamburger_title.open').hide();
+      $('.hamburger_title.close').show();
       $('.menu').toggleClass('active');
+    }
+  });
+
+  $(".menu_item_title").click(function(){
+    if ($(this).parent().find(".menu_item_list").hasClass('active')){
+      $(this).removeClass('active_tit');
+      $(this).parent().find(".menu_item_list").removeClass('active');
+      $(this).parent().find(".menu_item_list").hide();
+      return
+    } 
+    if ($(this).parent().find(".menu_item_list").length > 0) {
+      $(this).toggleClass('active_tit');
+      $(this).parent().find(".menu_item_list").toggleClass('active');
+      $(this).parent().find(".menu_item_list").show();
+      return
     }
   });
  
@@ -162,17 +175,17 @@ $(document).ready(function() {
   });
   
   $(window).scroll(function () {
-    if ($(window).scrollTop() >= 72) {
+    if ($(window).scrollTop() >= 1) {
       $('.navigation').addClass('media');
       $('.icon-logo').addClass('media');
       $('.navigation .logo_title').addClass('media');
-      $('.langMenu_picture').addClass('media');
+      $('.header').addClass('media');
     }
-    if ($(window).scrollTop() < 72) {
+    if ($(window).scrollTop() < 1) {
       $('.navigation').removeClass('media');
       $('.icon-logo').removeClass('media');
       $('.navigation .logo_title').removeClass('media');
-      $('.langMenu_picture').removeClass('media');
+      $('.header').removeClass('media');
     }
   });
 });
