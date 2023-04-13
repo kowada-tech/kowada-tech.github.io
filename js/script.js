@@ -45,30 +45,46 @@ $(document).ready(function() {
     
   });
 
+  $('.hidden .langMenu_item').click(function(){
+    if ($(this).hasClass('active')) {
+      return;
+    } else {
+      $(this).addClass('active');
+      if ($(this).hasClass('russian')) {
+        $(this).parents().find('.langMenu_item.english').toggleClass('active');
+        return;
+      }
+      if ($(this).hasClass('english')) {
+        $(this).parents().find('.langMenu_item.russian').toggleClass('active');
+        return;
+      }
+    }
+    
+  });
+
   $('.hamburger').click(function(){
     if ($('.hamburger').hasClass('active')){
       $('body').removeClass('fixed');
       $('.hamburger').removeClass('active');
       $('.menu').removeClass('active');
-      
     } else {
       $('body').addClass('fixed');
       $('.hamburger').toggleClass('active');
       $('.menu').toggleClass('active');
-      
-
     }
   });
 
-  $(".menu_item_title").click(function(){
+  $('.menu_item_title').click(function(){
     if ($(this).parent().find(".menu_item_list").hasClass('active')){
       $(this).removeClass('active_tit');
+      $(this).parent().removeClass('active');
       $(this).parent().find(".menu_item_list").removeClass('active');
       $(this).parent().find(".menu_item_list").hide();
       return
     } 
     if ($(this).parent().find(".menu_item_list").length > 0) {
       $(this).toggleClass('active_tit');
+      $(this).parent().toggleClass('active');
       $(this).parent().find(".menu_item_list").toggleClass('active');
       $(this).parent().find(".menu_item_list").show();
       return
@@ -186,6 +202,17 @@ $(document).ready(function() {
       $('.searchForms').removeClass('media');
     }
   });
-
-   
+ 
+  /* $(window).resize(function() {
+    console.log($(window).height());
+    if ($(window).height() < 626) {
+      $('.menu').css('height', '625px');
+      $('.fixed').css('overflow-y', 'scroll');
+    }
+  });
+  $(window).resize();
+  if ($(window).height() < 626) {
+    $('.menu').css('height', '625px');
+    $('.fixed').css('overflow-y', 'scroll');
+  } */
 });
