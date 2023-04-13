@@ -49,15 +49,11 @@ $(document).ready(function() {
     if ($('.hamburger').hasClass('active')){
       $('body').removeClass('fixed');
       $('.hamburger').removeClass('active');
-      //$('.hamburger_title.close').hide();
-      //$('.hamburger_title.open').show();
       $('.menu').removeClass('active');
       
     } else {
       $('body').addClass('fixed');
       $('.hamburger').toggleClass('active');
-      //$('.hamburger_title.open').hide();
-      //$('.hamburger_title.close').show();
       $('.menu').toggleClass('active');
       
 
