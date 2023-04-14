@@ -67,47 +67,33 @@ $(document).ready(function() {
       $('body').removeClass('fixed');
       $('.hamburger').removeClass('active');
       $('.menu').removeClass('active');
+      $('.menu_list').removeClass('active');
     } else {
       $('body').addClass('fixed');
       $('.hamburger').toggleClass('active');
       $('.menu').toggleClass('active');
+      $('.menu_list').toggleClass('active');
     }
-  });
-
-  /* $('.menu_item_title').click(function(){
-    if ($(this).parent().find(".menu_item_list").hasClass('active')){
-      $(this).removeClass('active_tit');
-      $(this).parent().removeClass('active');
-      $(this).parent().find(".menu_item_list").removeClass('active');
-      $(this).parent().find(".menu_item_list").hide();
-      return
-    } 
-    if ($(this).parent().find(".menu_item_list").length > 0) {
-      $(this).toggleClass('active_tit');
-      $(this).parent().toggleClass('active');
-      $(this).parent().find(".menu_item_list").toggleClass('active');
-      $(this).parent().find(".menu_item_list").show();
-      return
-    }
-  }); */
+  });  
  
-  $('.menu_item').click(function() {
-    if ($(this).find(".menu_item_list").hasClass('active')){
-      $(this).find(".menu_item_title").removeClass('active_tit');
-      $(this).removeClass('active');
-      $(this).find(".menu_item_list").removeClass('active');
-      $(this).find(".menu_item_list").hide();
-      return
-    }
-
-    if ($(this).find(".menu_item_list").length > 0) {
-      $(this).find(".menu_item_title").toggleClass('active_tit');
-       $(this).addClass('active');
-       $(this).find(".menu_item_list").toggleClass('active');
-       $(this).find(".menu_item_list").show();
-       return
-     }
-  });
+    $('.menu_item').click(function() {
+      if ($(this).parents().find('.hamburger').is('.active')) {
+        if ($(this).find(".menu_item_list").hasClass('active')){
+        $(this).find(".menu_item_title").removeClass('active_tit');
+        $(this).removeClass('active');
+        $(this).find(".menu_item_list").removeClass('active');
+        $(this).find(".menu_item_list").hide();
+        return
+      }
+      if ($(this).find(".menu_item_list").length > 0) {
+        $(this).find(".menu_item_title").toggleClass('active_tit');
+         $(this).addClass('active');
+         $(this).find(".menu_item_list").toggleClass('active');
+         $(this).find(".menu_item_list").show();
+         return
+       }
+      } 
+    });
 
   $('.danger_scale').each(function() {
     let scale = +$(this).attr('data-scale'),

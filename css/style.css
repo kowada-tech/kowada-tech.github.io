@@ -1160,8 +1160,8 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   margin-top: 7px;
-  width: calc((100% - 132px) / 3);
-  margin: 25px 22px 0px;
+  width: calc((100% - 96px) / 4);
+  margin: 25px 12px 0px 12px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1381,7 +1381,7 @@ article em {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 25px 12px 5px 12px;
-  width: calc((100% - 96px) / 4);
+  width: calc((100% - 120px) / 5);
   background-color: #fff;
   border-radius: 8px;
   -webkit-transition: all 0.5s;
@@ -1608,7 +1608,7 @@ article em {
 }
 .museum_item {
   margin-top: 10px;
-  padding: 16px;
+  padding: 12px;
   width: 25%;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -1616,13 +1616,8 @@ article em {
   border-radius: 8px;
 }
 .museum_item:hover {
-  /* animation: heartbeat 1.5s ease infinite; */
   border: 1px solid #e3f1f4;
   border-radius: 8px;
-  /*  img {
-       animation: heartbeat 1.5s ease infinite;
-
-   } */
 }
 .museum_item:hover .title {
   color: #3193C1;
@@ -2126,6 +2121,20 @@ article em {
   .searchForms_form:nth-child(n+2) {
     margin-top: 30px;
   }
+  .main-news .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-news_item {
+    width: calc((100% - 96px) / 4);
+  }
+  .main-news_item:nth-child(n+5) {
+    display: none;
+  }
   .footer .page_wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2461,12 +2470,6 @@ article em {
   }
   .main-news .wrapper {
     padding-top: 15px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .main-news_item {
     margin: 12px;
@@ -2675,7 +2678,7 @@ article em {
     width: 90%;
   }
 }
-@media (max-height: 584px) {
+@media (orientation: landscape) and (max-height: 584px) {
   .header {
     min-height: 50px;
     padding: 3px 0px;
