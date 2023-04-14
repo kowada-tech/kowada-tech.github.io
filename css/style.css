@@ -2225,7 +2225,7 @@ article em {
     display: block;
     top: 0;
     left: 0;
-    height: calc(100% - 117px);
+    height: calc(100% - 170px);
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-box-orient: vertical;
@@ -2258,15 +2258,15 @@ article em {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 5px 0px;
+    padding-bottom: 30px;
     width: 100%;
   }
   .header .menu .hidden .langMenu_block {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
   }
   .header .menu .hidden .langMenu_block span {
     display: block;
-    padding: 5px;
+    padding: 5px 0px 20px 0px;
     font-size: 18px;
     text-align: center;
   }
@@ -2674,5 +2674,53 @@ article em {
   }
   .footer_item {
     width: 90%;
+  }
+}
+@media (max-height: 584px) {
+  .header {
+    min-height: 50px;
+    padding: 3px 0px;
+  }
+  .header .logo .icon-logo {
+    font-size: 42px;
+  }
+  .header .menu {
+    top: 50px;
+    height: calc(100% - 50px);
+    width: 400px;
+  }
+  .header .menu_list {
+    height: calc(100% - 60px);
+  }
+  .header .menu .hidden {
+    padding: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .menu .hidden .langMenu_block {
+    padding-bottom: 0px;
+  }
+  .header .menu .hidden .langMenu_block span {
+    display: none;
+  }
+  .header .menu .hidden .langMenu_wrap .langMenu_item {
+    padding: 7px 12px;
+  }
+  .header .menu .hidden .langMenu_wrap .langMenu_item.russian {
+    margin-right: 10px;
+  }
+  .header .menu .hidden .socials {
+    margin-left: 10px;
+  }
+  .header .menu .hidden .socials_phone {
+    display: none;
+  }
+  .header .hamburger {
+    top: 17px;
   }
 }/*# sourceMappingURL=style.css.map */
