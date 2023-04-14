@@ -2678,7 +2678,7 @@ article em {
     width: 90%;
   }
 }
-@media (orientation: landscape) and (max-height: 584px) {
+@media (max-height: 584px) {
   .header {
     min-height: 50px;
     padding: 3px 0px;
@@ -2686,15 +2686,15 @@ article em {
   .header .logo .icon-logo {
     font-size: 42px;
   }
-  .header .menu {
+  .header .menu.active {
     top: 50px;
     height: calc(100% - 50px);
     width: 400px;
   }
-  .header .menu_list {
+  .header .menu.active_list {
     height: calc(100% - 60px);
   }
-  .header .menu .hidden {
+  .header .menu.active .hidden {
     padding: 10px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2704,22 +2704,22 @@ article em {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .header .menu .hidden .langMenu_block {
+  .header .menu.active .hidden .langMenu_block {
     padding-bottom: 0px;
   }
-  .header .menu .hidden .langMenu_block span {
+  .header .menu.active .hidden .langMenu_block span {
     display: none;
   }
-  .header .menu .hidden .langMenu_wrap .langMenu_item {
+  .header .menu.active .hidden .langMenu_wrap .langMenu_item {
     padding: 7px 12px;
   }
-  .header .menu .hidden .langMenu_wrap .langMenu_item.russian {
+  .header .menu.active .hidden .langMenu_wrap .langMenu_item.russian {
     margin-right: 10px;
   }
-  .header .menu .hidden .socials {
+  .header .menu.active .hidden .socials {
     margin-left: 10px;
   }
-  .header .menu .hidden .socials_phone {
+  .header .menu.active .hidden .socials_phone {
     display: none;
   }
   .header .hamburger {
