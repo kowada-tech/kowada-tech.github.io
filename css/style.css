@@ -2488,6 +2488,7 @@ article em {
     line-height: 44px;
   }
   .services .page_wrap {
+    padding: 0px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2586,20 +2587,6 @@ article em {
   .services_img {
     width: 100%;
   }
-  /* .footer {
-      .page_wrap {
-          padding: 30px 0px;
-          flex-direction: column;
-      }
-      &_item {
-          padding: 0px;
-          margin: 12px 5px;
-          width: 100%; 
-          &.contacts {
-              margin-top: 25px;
-          }
-      }
-  } */
 }
 @media (max-width: 649px) {
   .searchForms.media {
