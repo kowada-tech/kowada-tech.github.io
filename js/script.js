@@ -74,7 +74,7 @@ $(document).ready(function() {
     }
   });
 
-  $('.menu_item_title').click(function(){
+  /* $('.menu_item_title').click(function(){
     if ($(this).parent().find(".menu_item_list").hasClass('active')){
       $(this).removeClass('active_tit');
       $(this).parent().removeClass('active');
@@ -89,8 +89,26 @@ $(document).ready(function() {
       $(this).parent().find(".menu_item_list").show();
       return
     }
-  });
+  }); */
  
+  $('.menu_item').click(function() {
+    if ($(this).find(".menu_item_list").hasClass('active')){
+      $(this).find(".menu_item_title").removeClass('active_tit');
+      $(this).removeClass('active');
+      $(this).find(".menu_item_list").removeClass('active');
+      $(this).find(".menu_item_list").hide();
+      return
+    }
+
+    if ($(this).find(".menu_item_list").length > 0) {
+      $(this).find(".menu_item_title").toggleClass('active_tit');
+       $(this).addClass('active');
+       $(this).find(".menu_item_list").toggleClass('active');
+       $(this).find(".menu_item_list").show();
+       return
+     }
+  });
+
   $('.danger_scale').each(function() {
     let scale = +$(this).attr('data-scale'),
         item = $(this);
