@@ -92,7 +92,20 @@ $(document).ready(function() {
          $(this).find(".menu_item_list").show();
          return
        }
-      } 
+      } else {
+        if ($(this).find(".menu_item_list").hasClass('active')){
+          $(this).removeClass('active');
+          $(this).find(".menu_item_list").removeClass('active');
+          $(this).find(".menu_item_list").hide();
+          return
+        }
+        if ($(this).find(".menu_item_list").length > 0) {
+           $(this).addClass('active');
+           $(this).find(".menu_item_list").toggleClass('active');
+           $(this).find(".menu_item_list").show();
+           return
+         }
+      }
     });
 
   $('.danger_scale').each(function() {
