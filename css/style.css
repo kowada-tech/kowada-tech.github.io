@@ -1259,7 +1259,6 @@ input[type=number]::-webkit-inner-spin-button {
   color: #3193C1;
 }
 .publications_date {
-  margin-bottom: 15px;
   line-height: 24px;
   text-align: left;
 }
