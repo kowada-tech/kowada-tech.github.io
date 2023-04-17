@@ -14,8 +14,14 @@ $(document).ready(function() {
     ]
   });
 
-  $('.langMenu_picture').click(function(){
-    $(this).toggleClass('active');
+  $('.langMenu').click(function(){
+    if ($(this).hasClass('active')){
+      $(this).removeClass('active');
+      $(this).parent().find(".langMenu_list").hide();
+    } else {
+       $(this).toggleClass('active');
+       $(this).parent().find(".langMenu_list").show();
+     }
   });
 
   $('.langMenu_item').click(function(){
@@ -27,19 +33,16 @@ $(document).ready(function() {
         $(this).parents().find('.russian_pic').addClass('active');
         $(this).parents().find('.english_pic').removeClass('active');
         $(this).parents().find('.langMenu_picture').toggleClass('active');
-        //$(this).parents().find('.langMenu_list').toggleClass('active');
       }
       
     }
     if ($(this).hasClass('english')){
       if ($(this).parents().find('.english_pic').hasClass('active')) {
         $(this).parents().find('.langMenu_picture').toggleClass('active');
-        //$(this).parents().find('.langMenu_list').toggleClass('active');
       } else {
         $(this).parents().find('.english_pic').addClass('active');
         $(this).parents().find('.russian_pic').removeClass('active');
         $(this).parents().find('.langMenu_picture').toggleClass('active');
-        //$(this).parents().find('.langMenu_list').toggleClass('active');
       }
     }
     
@@ -92,21 +95,56 @@ $(document).ready(function() {
          $(this).find(".menu_item_list").show();
          return
        }
+      } 
+      if ($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).find(".menu_item_list").hide();
       } else {
-        if ($(this).find(".menu_item_list").hasClass('active')){
+         $(this).toggleClass('active');
+         $(this).find(".menu_item_list").show();
+       }
+      /* else {
+        if ($(this).hasClass('active')){
+          $(this).removeClass('active');
+          return
+        } else {
+           $(this).toggleClass('active');
+           return
+         }
+         let a = $(this);
+         let b = $(this).children(".menu_item menu_item_end");
+         console.log(a);
+         console.log(b);
+         if ($(this).children("#more").length > 0) {
+          let a = $(this);
+          console.log(a);
+          if ($(this).children("#more").hasClass('active')){
+            console.log(2);
+            $(this).children("#more").removeClass('active');
+            return
+          } else {
+            console.log(3);
+             $(this).children("#more").addClass('active');
+             return
+           }
+         } else {
+          console.log(1);
+         }
+         if ($(this).children("#more").hasClass('active')){
           $(this).removeClass('active');
           $(this).find(".menu_item_list").removeClass('active');
           $(this).find(".menu_item_list").hide();
           return
-        }
-        if ($(this).find(".menu_item_list").length > 0) {
+        } if ($(this).children("#more").hasClass('active') === false) {
            $(this).addClass('active');
            $(this).find(".menu_item_list").toggleClass('active');
            $(this).find(".menu_item_list").show();
            return
          }
-      }
+         return
+      } */
     });
+    
 
   $('.danger_scale').each(function() {
     let scale = +$(this).attr('data-scale'),
