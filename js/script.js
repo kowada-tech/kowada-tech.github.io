@@ -201,6 +201,7 @@ $(document).ready(function() {
   } */
 
   $('.menu_item_list').parent().addClass('check');
+  $('#more').parent().addClass('check');
   $('.menu_more_list').parent().find('.menu_more_title').addClass('check');
 
   $('.menu_more').click(function() {

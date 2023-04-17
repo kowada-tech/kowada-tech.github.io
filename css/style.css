@@ -799,6 +799,16 @@ input[type=number]::-webkit-inner-spin-button {
   display: block;
 }
 .header .menu #more {
+  display: none;
+  position: absolute;
+  top: 46px;
+  left: -5px;
+  padding: 12px 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 4px rgba(26, 38, 56, 0.25), 0px 4px 16px rgba(27, 47, 58, 0.25);
+          box-shadow: 0px 1px 4px rgba(26, 38, 56, 0.25), 0px 4px 16px rgba(27, 47, 58, 0.25);
+  border-radius: 8px;
+  z-index: 5;
   min-width: 240px;
   display: none;
 }
