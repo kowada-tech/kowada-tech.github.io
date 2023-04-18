@@ -1783,12 +1783,12 @@ article em {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 185px;
   padding: 8px;
   margin-bottom: 10px;
@@ -1820,11 +1820,11 @@ article em {
   padding-bottom: 30px;
 }
 .gallery .page_wrap {
+  padding: 0px;
   width: 1090px;
-  padding: 0px 10px;
 }
 .gallery_item {
-  padding: 30px 0px;
+  padding: 30px 10px;
   border-bottom: 1px solid #CFD8DC;
 }
 .gallery_item:last-child {
@@ -2816,6 +2816,68 @@ article em {
   .searchForms_input {
     margin-left: 0px;
   }
+  .metal {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-column-gap: 7px;
+       -moz-column-gap: 7px;
+            column-gap: 7px;
+    row-gap: 10px;
+  }
+  .metal_item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 0px;
+  }
+  .metal_item span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .kings_item {
+    width: 155px;
+  }
+  .kings_title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .kings_date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .checkdanger {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkdanger_descr {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .checkdanger_descr span {
+    font-size: 16px;
+  }
+  .gallery .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .gallery_img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery_coin {
+    width: 100%;
+  }
 }
 @media (max-width: 569px) {
   .header .logo_title.big {
@@ -2852,6 +2914,15 @@ article em {
   .publications .title_descr {
     font-size: 18px;
     line-height: 22px;
+  }
+  .pagination_number {
+    padding: 8px 10px;
+    margin-right: 2px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .pagination_number:last-child {
+    display: none;
   }
 }
 @media (max-height: 584px) {
