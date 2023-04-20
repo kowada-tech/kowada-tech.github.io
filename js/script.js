@@ -158,4 +158,20 @@ $(document).ready(function() {
     $(this).next().html(file.name);
   });
 
+  $('.counter_minus').click(function() {
+    let $input = $(this).parent().find('.counter_value');
+    let count = parseInt($input.text()) - 1;
+    console.log(count);
+    count = count < 1 ? 1 : count;
+    $input.text(count);
+  });
+
+  $('.counter_plus').click(function() {
+    let $input = $(this).parent().find('.counter_value');
+    let count = parseInt($input.text()) + 1;
+    let maxcount = parseInt($(this).parent().parent().parent().find('.max-count').text());
+    count = count > maxcount ? maxcount : count;
+    $input.text(count);
+}); 
+
 });
