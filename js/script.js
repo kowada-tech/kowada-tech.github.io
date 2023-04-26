@@ -172,6 +172,23 @@ $(document).ready(function() {
     let maxcount = parseInt($(this).parent().parent().parent().find('.max-count').text());
     count = count > maxcount ? maxcount : count;
     $input.text(count);
-}); 
+  }); 
 
+  $('.product_label').click(function() {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $(this).parent().find('.product_list').hide();
+    } else {
+      $(this).toggleClass('active');
+      $(this).parent().find('.product_list').show();
+    }
+    
+  });
+
+  $('.product_list > li').click(function() {
+    let count = $(this).text();
+    $(this).parents().find('.product_label').text(count);
+    $(this).parents().find('.product_label').removeClass('active');
+    $(this).parent().hide();
+  });
 });
