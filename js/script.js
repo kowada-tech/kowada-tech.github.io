@@ -187,8 +187,8 @@ $(document).ready(function() {
 
   $('.product_list > li').click(function() {
     let count = $(this).text();
-    $(this).parents().find('.product_label').text(count);
-    $(this).parents().find('.product_label').removeClass('active');
+    $(this).parents('.product_select').find('.product_label').text(count);
+    $(this).parents('.product_select').find('.product_label').removeClass('active');
     $(this).parent().hide();
   });
 });
