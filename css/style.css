@@ -4603,6 +4603,12 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 569px) {
+  .photo_logotitle {
+    font-size: 26px;
+  }
+  .photo .page_wrap .title_big {
+    font-size: 26px;
+  }
   .header .logo_title.big {
     display: none;
   }
