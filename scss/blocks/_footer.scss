@@ -1,0 +1,143 @@
+.footer {
+    min-height: 270px;
+    background-color: $bg-dark-color;
+    .page_wrap {
+        padding: 55px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    &_item {
+        padding: 0px 5px;
+        margin: 0px 10px;
+        &.about {
+            .footer_decsr {
+                margin-top: 35px;
+            }
+            .footer_text {
+                margin-top: 20px;
+            }
+        }
+        &.contacts {
+            .footer_decsr {
+                margin-top: 10px;
+            }
+        }
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        &:hover {
+            .logo_img {
+                background-color: $link-light-color;
+            }
+            .logo_title {
+                color: $link-light-color;
+            }
+            
+        }
+        &_img {
+            background-color: #fff;
+            margin-right: 15px;
+        }
+        .icon-logofoot {
+            color: $bg-dark-color;
+            font-size: 90px;
+        }
+        &_title {
+            font-family: 'Philosopher';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            color: #fff;
+            text-align: left;
+        }
+    }
+    .title {
+        color: #fff;
+        text-align: left;
+    }
+    &_text {
+        width: 325px;
+        color: #fff;
+        font-size: 16px;
+	    line-height: 19px;
+        text-align: left;
+    }
+    &_decsr {
+        color: #B0BEC5;
+        font-size: 16px;
+	    line-height: 19px;
+        text-align: left;
+    }
+    &_list {
+        margin-bottom: 25px;
+        ul {
+            margin-top: 10px;
+            li {
+                margin-bottom: 5px;
+                text-align: left;
+                a {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 19px;
+                    &:hover {
+                        color: $link-light-color;
+                    }
+                }
+            }
+        }
+        
+    }
+    .socials {
+        display: flex;
+        align-items: center;
+        margin: 17px 5px 15px 3px;
+        text-align: left;
+        &_link {
+            margin-right: 10px;
+            color: #fff;
+            &:hover {
+                transform: scale(1.2);
+                span {
+                    color: $link-light-color;
+                }
+            }
+        }
+        span {
+            color: #fff;
+        }
+        .icon-whatsapp {
+            font-size: 22px;
+        }
+        .icon-viber {
+            font-size: 23px;
+        }
+        .icon-telegram {
+            font-size: 22px;
+        }
+        &_phone {
+            color: #fff;
+            &:hover {
+                color: $link-light-color;
+            }
+        }
+    }
+    &_email {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .icon-email {
+            margin-right: 5px;
+            color: #fff;
+        }
+        &_link {
+            display: block;
+            margin-left: 5px;
+            color: #fff;
+            &:hover {
+                color: $link-light-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.department {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    &_item {
+        padding: 8px;
+        border-radius: 8px;
+        margin-right: 12px;
+        display: flex;
+        font-size: 18px;
+        line-height: 24px;
+        color: $main-color;
+        font-weight: 600;
+        span {
+            font-size: 18px;
+            line-height: 24px;
+            color: $main-color;
+            font-weight: 600;
+            margin: 0px 3px;
+        }
+        .icon-numismatic {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .icon-phaleristic {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .icon-cultural {
+            font-size: 24px;
+            font-weight: 400;
+        }
+        &:hover {
+            color: $link-title-color;
+            background-color: $bg-light-color;
+            span {
+                color: $link-title-color;
+            }
+        }
+        &.active {
+            color: #000;
+            background-color: $bg-light-color;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+.experts {
+    .page_wrap {
+        padding: 0px 20px;
+        max-width: 1440px;
+    }
+    .title_descr {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    &_item {
+        padding: 30px 0px;
+    }
+    &_department {
+        display: flex;
+		align-items: center;
+        .experts_roles {
+            margin-left: 15px;
+        }
+        div {
+            &::before {
+                font-family: 'icomoon', sans-serif;
+                position: relative;
+                font-size: 22px;
+                color: $bg-dark-color;
+            }
+        }
+        
+        &.cultural {
+            &::before {
+                content: '\e904';
+            }
+        }
+        &.numismatic {
+            &::before {
+                content: '\e90a';
+            }
+        }
+        &.phaleristic {
+            &::before {
+                content: '\e90b';
+            }
+        }
+    }
+    &_descr {
+        margin-top: 20px;
+        p {
+            font-size: 18px;
+            line-height: 160%;
+            color:#000;
+            text-align: left;
+        }
+    }
+}

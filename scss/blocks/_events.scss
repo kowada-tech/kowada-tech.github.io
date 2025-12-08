@@ -1,0 +1,93 @@
+.events {
+    padding: 30px 10px 50px 10px;
+    background-color: $bg-light-color;
+    transition: all 0.5s;
+    &_item {
+        margin: 25px 12px 0px 12px;
+        width: calc((100% - 72px)/4);
+        transition: all 0.5s;
+        &:hover {
+            .title  {
+                color: $link-title-color;
+            }
+            img {
+                filter: brightness(.9);
+                /* transform: scale(1.02); */
+            }
+            .events_play {
+                display: block;
+            }
+            .events_descr {
+                color: $link-title-color;
+            }
+            .events_date {
+                color: $link-title-color;
+            }
+        }
+        .title {
+            padding: 20px 20px 10px 20px;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+            padding: 0px 20px 10px 20px;
+        }
+    }
+    &_img {
+        position: relative;
+        width: 100%;
+        p {
+            position: relative;
+            width: 100%;
+            padding-bottom: calc(289 / 512) * 100%;
+            img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                display: block;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+        }
+    }
+    &_play {
+        display: none;
+        position: absolute;
+        top: 39%;
+        left: 44%;
+        z-index: 1;
+        width: 12.5%;
+    }
+    &_descr {
+        padding: 20px;
+        text-align: left;
+    }
+    &_date {
+        padding: 0px 20px;
+        text-align: left;
+    }
+    &_btn {
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    &_lecture {
+        margin: 25px 12px 0px 12px;
+        width: calc((100% - 72px)/4);
+        .events_item {
+            margin: 0px;
+        }
+    }
+    a:hover {
+        .title  {
+            color: $link-title-color;
+        }
+    }
+}
+.block_title {
+    border-bottom: 1px solid #CFD8DC;
+    padding-bottom: 40px;
+    .title_descr {
+        color: #000;
+    }
+}

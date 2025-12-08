@@ -1,0 +1,391 @@
+.museum {
+    padding: 30px 10px 38px 10px;
+    border-bottom: 1px solid #CFD8DC;
+    transition: all 0.5s;
+    &_item {
+        margin-top: 10px;
+        padding: 12px;
+        width: calc(100%/4);
+        transition: all 0.4s;
+        border: 1px solid #fff;
+	    border-radius: 8px;
+        &:hover {
+            border: 1px solid #e3f1f4;
+	        border-radius: 8px;
+            .title  {
+                color: $link-title-color;
+            }
+        }
+        .title {
+            padding: 20px 20px 10px 20px;
+            text-align: center;
+        }
+    }
+    &_img {
+        width: 100%;
+        display: flex;
+        img {
+            width: 50%;
+            object-fit: contain;
+        }
+    }
+    
+    a:hover {
+        .title  {
+            color: $link-title-color;
+        }
+    }
+}
+.danger {
+    padding: 5px 20px 10px 20px;
+    &_descr {
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    &_scale {
+        display: flex;
+        justify-content: center;
+    }
+    &_circle {
+        position: relative;
+        margin: 0px 3px;
+        width: 22px;
+        height: 22px;
+        background-color: #ECEFF1;
+        border-radius: 100%;
+        &.yellow {
+            background-color: #F4BB0A;
+        }
+        &.red {
+            background-color: #E03737;
+        }
+        &.green {
+            background-color: #A7D24B;
+        }
+        &.orange {
+            background-color: #F97D37;
+        }
+        &.symbol {
+            &::before {
+                content: '\e90d';
+                font-family: 'icomoon', sans-serif;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-size: 14px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+        
+    }
+}
+.filter {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CFD8DC;
+    .page_wrap {
+        width: 1580px;
+    }
+}
+.metal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_item {
+        display:inline-flex;
+        justify-content: start;
+        align-items: center;
+        padding: 8px;
+        border-radius: 8px;
+        margin-right: 12px;
+        font-size: 18px;
+        line-height: 24px;
+        color: $main-color;
+        font-weight: 600;
+        &:hover {
+            color: $link-title-color;
+            background-color: $bg-light-color;
+            span {
+                color: $link-title-color;
+            }
+        }
+        &.active {
+            color: #000;
+            background-color: $bg-light-color;
+            &:hover {
+                color: #000;
+            }
+        }
+        span {
+            margin-left: 8px;
+            font-size: 18px;
+            line-height: 24px;
+            color: $main-color;
+            font-weight: 600; 
+        }
+        img {
+            border-radius: 4px;
+        }
+        
+    }
+}
+.kings {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_item {
+        display:inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 185px;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        &:hover {
+            background-color: $bg-light-color;
+            .kings_title {
+                color: $link-title-color;
+            }
+        }
+        &.active {
+            background-color: $bg-light-color;
+            .kings_title {
+                color: #000;
+            }
+            &:hover {
+                .kings_title {
+                    color: #000;
+                }
+            }
+        }
+    }
+    &_title {
+        font-size: 18px;
+        line-height: 24px;
+        color: $main-color;
+        font-weight: 600;
+    }
+}
+.gallery {
+    .page_wrap {
+        padding: 0px;
+        width: 1090px;
+    }
+    &_item {
+        padding: 30px 10px;
+        border-bottom: 1px solid #CFD8DC;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &_img {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_coin {
+        width: calc((100% - 30px)/2);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+    &_pict {
+        width: 100%;
+        cursor: pointer;
+    }
+    .profile {
+        margin: 0 auto;
+        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .title {
+        margin-top: 5px;
+        text-align: left;
+    }
+    .danger {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 0px;
+        margin-top: 10px;
+        &_descr {
+            margin-bottom: 0px;
+        }
+    }
+    &_descr {
+        p {
+            margin-top: 5px;
+            line-height: 160%;
+            color: $descr_color;
+            text-align: left;
+        }
+        
+    }
+}
+.checkdanger {
+    display: flex;
+    justify-content: center;
+    &_descr {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        span {
+            color: #000;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    &_circle {
+        position: relative;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: #ECEFF1;
+        border-radius: 100%;
+        background-color: $bg-dark-color;
+        &::before {
+            content: '\e90d';
+            font-family: 'icomoon', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+}
+.checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin: 0px 10px;
+    cursor: pointer;
+    user-select: none;
+    &.active {
+        .checkbox_checkmark {
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked {
+            & ~ .checkbox_checkmark {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .checkbox_checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        background-color: #fff;
+        transition: background-color 0.25s ease;
+        border-radius: 4px;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 0px;
+            width: 5px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+    }
+    .checkbox_body {
+        color: #000;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &.blue {
+        .checkbox_checkmark {
+            border: 2px solid $main-color;
+		}
+        &.active {
+            .checkbox_checkmark {
+                background-color: $main-color;
+            }
+        }
+    }
+    &.green {
+        .checkbox_checkmark {
+            border: 2px solid #A7D24B;
+		}
+        &.active {
+            .checkbox_checkmark {
+                background-color: #A7D24B;
+            }
+        }
+	}
+    &.yellow {
+        .checkbox_checkmark {
+            border: 2px solid #F4BB0A;
+		}
+        &.active {
+            .checkbox_checkmark {
+                background-color: #F4BB0A;
+            }
+        }
+	}
+    &.orange {
+        .checkbox_checkmark {
+            border: 2px solid #F97D37;
+		}
+        &.active {
+            .checkbox_checkmark {
+                background-color: #F97D37;
+            }
+        }
+	}
+    &.red {
+        .checkbox_checkmark {
+            border: 2px solid #E03737;
+		}
+        &.active {
+            .checkbox_checkmark {
+                background-color: #E03737;
+            }
+        }
+    }
+    &.aqua {
+        input {
+			&:checked {
+				& ~ .checkbox_checkmark {
+					background-color: $main-color;
+				}
+			}
+		}
+		&:hover {
+			input {
+				&:checked {
+					& ~ .checkbox_checkmark {
+						background-color: $main-color;
+					}
+				}
+			}
+		}
+		.checkbox_checkmark {
+            border: 2px solid $main-color;
+		}
+    }
+}

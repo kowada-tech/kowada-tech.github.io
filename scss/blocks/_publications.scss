@@ -1,0 +1,54 @@
+.publications {
+    padding: 30px 10px 55px 10px;
+    transition: all 0.5s;
+    a:hover {
+        .title  {
+            color: $link-title-color;
+        }
+    }
+    &_item {
+        display: block;
+        transition: all 0.8s;
+        margin-top: 7px;
+        width: calc((100% - 96px)/4);
+        margin: 25px 12px 0px 12px;
+        transition: all 0.5s;
+        &:hover {
+            .title  {
+                color: $link-title-color;
+            }
+            img {
+                animation: heartbeat 1.5s ease infinite;
+            }
+            .publications_descr {
+                color: $link-title-color;
+            }
+        }
+        .title {
+            margin-top: 30px;
+        }
+    }
+    &_img {
+        width: 100%;
+        border-radius: 8px;
+        p {
+            position: relative;
+            width: 100%;
+            padding-bottom: calc(71 / 120) * 100%;
+        }
+        img {
+            display: block;
+            border-radius: 8px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &_descr {
+        text-align: justify;
+        margin-top: 18px;
+        color: #546E7A;
+    }
+
+}
