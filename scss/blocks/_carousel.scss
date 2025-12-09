@@ -47,10 +47,10 @@
     &_btn {
         margin-top: 30px;
         padding: 15px 25px;
-        border: 1px #000 solid;
+        border: 1px $item-color solid;
         font-weight: 600;
-        
-
+        border-radius: 4px;
+        color: $item-color;
     }
     &_img {
         img {

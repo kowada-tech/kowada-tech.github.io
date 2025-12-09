@@ -1,52 +1,90 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 0px 25px;
-    height: 80px;
+    &_wrap {
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    &_str {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 20px 0px;
+        &_first {
+            background-color: $main-color;
+            padding: 10px 0px;
+            .header_wrap {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
     &_logo {
         display: flex;
         align-items:center;
-        height: 90px;
-        margin-left: 40px;
         h1 {
-            font-family: 'Roboto', sans-serif;
             font-size: 34px;
             font-weight: 900;
             text-transform: uppercase;
             margin-left: 10px;
             color: #3c474e;
         }
-        img {
-            height: 30px;
+        .icon-logo {
+            font-size: 28px;
+            color: $item-color;
         }
     }
-    ul {
+    &_search {
+        position: relative;
+        input {
+            border: 1px #b3b3b3 solid;
+            border-radius: 4px;
+            padding: 10px 40px 10px 20px;
+            text-align: left;
+            width: 500px;
+            color: #b3b3b3;
+            font-size: 12px;
+        }
+        .icon-search {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            color: #b3b3b3;
+        }
+    }
+    &_menu {
         display: flex;
         align-items:center;
         li {
             position: relative;
             margin-right: 30px;
-            padding-right: 20px;
             font-family: 'Montserrat Alternates', sans-serif;
-            font-size: 20px;
+            font-size: 14px;
             color: black;
             font-weight: 600;
-
-            span {
-                position: absolute;
-                font-size: 30px;
-                display: block;
-                top: 1px;
-                right: 0;
-            }
+        }
+    }
+    &_social {
+        display: flex;
+        align-items: center;
+        p {
+            margin: 0px 25px 0px 5px;
+            font-weight: 500;
+        }
+        .icon-telegram {
+            color: #32a9df;
+        }
+        .icon-phone {
+            color: #67c15e;
         }
     }
     &_icons {
         display: flex;
         align-items:center;
-        img {
-            margin-right: 20px;
+        span {
+            margin-right: 30px;
+            font-size: 20px;
+            color: #999;
         }
     }
 }
