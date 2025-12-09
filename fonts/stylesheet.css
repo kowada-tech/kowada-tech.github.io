@@ -98,5 +98,29 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'JosefinSans';
+    src: local('JosefinSans'), local('JosefinSans'),
+        url('JosefinSans.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'RubikMonoOne';
+    src: local('RubikMonoOne Regular'), local('RubikMonoOne-Regular'),
+        url('RubikMonoOne-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Unbounded';
+    src: local('Unbounded Regular'), local('Unbounded-Regular'),
+        url('Unbounded-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

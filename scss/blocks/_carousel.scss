@@ -1,6 +1,6 @@
 .carousel {
     max-height: 600px;
-    background-color: $bg-dark-color;
+    background-color: $main-color;
     &.media {
         
         margin-top: 50px;
@@ -13,66 +13,19 @@
         position: relative;
         margin: 0 auto;
     }
-    .icon-next, 
-    .icon-prev {
-        position: absolute;
-        font-size: 33px;
-        color: #fff;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-        &:hover {
-            color: #b5bdc1;
-        }
-    }
-    .icon-next {
-        right: 43px;
-    }
-    .icon-prev {
-        left: 32px;
-    }
-    .slick-dots {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        list-style: none;
-    }
-    .slick-dots button {
-        background: #fff;
-        opacity: 0.5;
-        border: none;
-        border-radius: 50%;
-        height: 12px;
-        width: 12px;
-        margin-right: 16px;
-        outline: none;
-        font-size: 0px;
-        color: #fff;
-        font {
-            opacity: 0;
-        }
-    }
-    .slick-dots li[class="slick-active"] button {
-        opacity: 1;
-    }
+    
     
     &_wrap {
         position: relative;
         display: flex;
         align-items: center;
+        justify-content:space-between;
         max-width: 1600px;
         margin: 0 auto;
     }
-    &_col {
-        width: calc(726 / 1600) * 100%;
-    }
     &_descr {
         position: absolute;
-        left: 20px;
+        left: 100px;
         top: 50%;
         transform: translateY(-50%);
         max-width: 650px;
@@ -81,50 +34,29 @@
     &_title {
         font-size: 40px;
         line-height: 54px;
-        color: #fff;
+        color: #000;
         text-align: left;
     }
     &_text {
         margin-top: 30px;
-        font-size: 21px;
+        font-size: 18px;
         line-height: 160%;
-        color: #fff;
+        color: #000;
         text-align: left;
     }
+    &_btn {
+        margin-top: 30px;
+        padding: 15px 25px;
+        border: 1px #000 solid;
+        font-weight: 600;
+        
+
+    }
     &_img {
-        position: relative;
-        max-height: 600px;
-        width: calc(874 / 1600) * 100%;
-        p {
-            position: relative;
-            width: 100%;
-            padding-bottom: calc(300 / 437) * 100%;
-        }
         img {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            display: block;
-            object-fit: cover;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            width: 275px;
-            height: 100%;
-            top: 0px;
-            left: -2px;
-            background: linear-gradient(90deg, #455A64 0%, rgba(69, 90, 100, 0.9) 12.5%, rgba(69, 90, 100, 0) 100%);
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            z-index: 1;
-            width: 192px;
-            height: 100%;
-            right: -2px;
-            background: linear-gradient(90deg, #455A64 0%, rgba(69, 90, 100, 0.88) 14.58%, rgba(69, 90, 100, 0) 100%);
-            transform: matrix(-1, 0, 0, 1, 0, 0);
+            height: 600px;
+            
+
         }
     }
 }
