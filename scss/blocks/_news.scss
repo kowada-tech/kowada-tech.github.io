@@ -7,21 +7,60 @@
         max-width: 1600px;
     }
     &_item {
-        width: calc((100% - 40px)/4);
-        margin: 5px;
+        position: relative;
+        width: calc((100% - 56px)/4);
+        margin: 7px;
         display: flex;
         flex-direction: column;
+        cursor: pointer;
+        &:before {
+            content: '';
+            //background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background: linear-gradient(45deg, #BB976D, #DDBD98, #DDC5AA, #A6947F, #D3C1AD, #D3C6B7, #B69978, #DBC1A3, #DBC8B2);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 20s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 10px;
+        }
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+        &:after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            border-radius: 10px;
+        }
     }
     &_img {
+        position: relative;
         width: 100%;
-        background-color: $main-color;
+        //background-color: $main-color;
+        background: linear-gradient(135deg, rgb(234, 234, 234), rgb(255, 255, 255));
         border-radius: 6px;
         margin-bottom: 15px;
         border: 1px #eee solid;
         box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.2);
+        
         img {
             width: 100%;
         }
+       
     }
     &_descr {
         padding: 10px 15px;
@@ -32,13 +71,17 @@
         h3 {
             font-size: 20px;
             font-weight: 600;
+            transition: all 0.6s ease;
+            &:hover {
+                color: $item-color;
+            }
         }
         p {
             color: #777;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
-            margin-top: 10px;
-            text-align: left;
+            margin-top: 15px;
+            text-align: right;
         }
     }
 }

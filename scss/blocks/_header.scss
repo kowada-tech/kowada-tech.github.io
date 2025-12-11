@@ -38,18 +38,18 @@
     }
     &_btn {
         position: relative;
-        padding: 9px 11px 6px;
+        padding: 9px 15px 6px;
         background-color: $item-color;
         border-radius: 6px;
         font-weight: 600;
         color: #fff;
-        transition: all 0.6s ease;
-        overflow: hidden;
+        cursor: pointer;
+        transition: all 1s ease;
         .icon-file-text2 {
             font-size: 14px;
             font-weight: 300;
         }
-       /*  &::before {
+        &::before {
             content: '';
             position: absolute;
             top: 0;
@@ -58,24 +58,13 @@
             height: 100%;
             background: rgba(255,255,255,0.3);
             border-radius: 6px;
-            transition: all 2s ease;
+            transition: all 1s ease;
         }
         &:hover {
             &::before {
                 width: 100%;
             }
-        } */
-        /* &:hover {
-            background: rgba(0,0,0,0);
-            color: $item-color;
-            box-shadow: inset 0 0 0 3px $item-color;
-        } */
- 
-	&:hover {
-		transform: scale(1.03);
-		box-shadow: 0 5px 15px rgba(88, 110, 125, 0.2);
-
-	}
+        }
     }
     &_search {
         position: relative;
@@ -107,9 +96,10 @@
             color: black;
             font-weight: 600;
             transition: all 0.6s;
+            cursor: pointer;
             &:hover {
                 color: $item-color;
-                cursor: pointer;
+                
             }
         }
     }
@@ -130,15 +120,50 @@
     &_icons {
         display: flex;
         align-items:center;
-        span {
+
+        p {
             margin-right: 30px;
-            font-size: 20px;
-            color: #999;
-            transition: all 0.6s;
+            position: relative;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            span { 
+                position: relative;
+                font-size: 24px;
+                color: #999;
+                transition: all 0.6s;
+                
+            }
+            &::before {
+                content: '3';
+                position: absolute;
+                top: -20px;
+                right: -10px;
+                padding: 0px 8px;
+                height: 20px;
+                width: fit-content;
+                background-color: $item-color;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 10px;
+                font-weight: 600;
+                color:#fff;
+                border-radius: 6px;
+                z-index: 5;
+            }
+            .icon-heart {
+                margin-top: 5px;
+                font-size: 22px;
+            }
             &:hover {
-                cursor: pointer;
-                color: $item-color;
-                transform: scale(1.1);
+                span {
+                   color: $item-color;
+                }
+                animation: heartbeaticon 1.5s ease infinite;
+            }
+            &:last-child {
+                &::before {
+                    display: none;
+                }
             }
         }
     }
