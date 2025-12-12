@@ -485,6 +485,9 @@ a.btn font {
   color: #57534e;
   background-color: #e7e5e4;
   border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   /* &.color_1 {
 
          background-color: $red-100; 
@@ -510,6 +513,11 @@ a.btn font {
          background-color: $violet-100; 
      }
   */
+}
+.category:hover {
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #ADACAC;
 }
 
 .header_wrap {
@@ -587,7 +595,7 @@ a.btn font {
   left: 0;
   width: 0;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(238, 224, 208, 0.2);
   border-radius: 6px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -791,7 +799,7 @@ a.btn font {
   left: 0;
   width: 0;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(238, 224, 208, 0.2);
   border-radius: 6px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -1285,7 +1293,7 @@ a.btn font {
   left: 0;
   width: 0;
   height: 100%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(238, 224, 208, 0.2);
   border-radius: 6px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;

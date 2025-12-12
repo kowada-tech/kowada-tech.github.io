@@ -103,6 +103,14 @@ a.btn {
     color: #57534e;
     background-color: #e7e5e4;
     border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        color: #ffffff;
+        font-weight: 500;
+        background-color: #ADACAC;
+
+    }
     /* &.color_1 {
         
         background-color: $red-100; 
