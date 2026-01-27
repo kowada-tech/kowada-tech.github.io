@@ -609,9 +609,9 @@ a.btn font {
 .header_search input {
   border: 1px #b3b3b3 solid;
   border-radius: 4px;
-  padding: 10px 40px 10px 20px;
+  padding: 6px 40px 6px 15px;
   text-align: left;
-  width: 500px;
+  width: 250px;
   color: #b3b3b3;
   font-size: 12px;
 }
@@ -621,9 +621,10 @@ a.btn font {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 15px;
+  font-size: 14px;
   color: #b3b3b3;
 }
-.header_menu {
+.header_topmenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,18 +632,18 @@ a.btn font {
       -ms-flex-align: center;
           align-items: center;
 }
-.header_menu li {
+.header_topmenu li {
   position: relative;
   margin-right: 30px;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 14px;
-  color: black;
+  color: #6b7280;
   font-weight: 600;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   cursor: pointer;
 }
-.header_menu li:hover {
+.header_topmenu li:hover {
   color: #bb976d;
 }
 .header_social {
@@ -662,6 +663,101 @@ a.btn font {
 }
 .header_social .icon-phone {
   color: #67c15e;
+}
+.header_categories {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header_category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.header_category img {
+  width: 20px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.header_category_title {
+  margin-left: 5px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.header_category:hover img {
+  -webkit-transform: scale(1.1) rotate(10deg);
+          transform: scale(1.1) rotate(10deg);
+}
+.header_category:hover .header_category_title {
+  color: #bb976d;
+}
+.header_category:hover .header_subcategories {
+  display: block;
+}
+.header_subcategories {
+  display: none;
+  position: absolute;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  top: 47px;
+  left: -10%;
+  width: 120%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px #eee solid;
+  -webkit-box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.2);
+  z-index: 35;
+}
+.header_subcategory {
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+}
+.header_subcategory_title {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header_subcategory_title:hover {
+  color: #bb976d;
+}
+.header_subcategory_item li {
+  margin: 10px;
+  text-align: left;
+}
+.header_subcategory_item li:hover a {
+  background-color: #e5e5e5;
+  color: #233353;
+}
+.header_subcategory_item li a {
+  border-radius: 6px;
+  padding: 5px 15px;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .header_icons {
   display: -webkit-box;
@@ -1181,6 +1277,23 @@ a.btn font {
   font-weight: 600;
   color: #fff;
   z-index: 6;
+}
+.bestsellers_company {
+  position: absolute;
+  padding: 3px 8px;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 6px;
+  background-color: #60a5fa;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 6;
+}
+.bestsellers_company span {
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: 600;
 }
 .bestsellers_descr {
   position: relative;
