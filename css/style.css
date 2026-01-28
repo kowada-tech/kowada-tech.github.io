@@ -1917,6 +1917,61 @@ footer.footer {
   -webkit-animation: services_arrow 1s linear infinite;
           animation: services_arrow 1s linear infinite;
 }
+.card_colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card_col_left {
+  margin-top: 15px;
+  width: 50%;
+}
+.card_col_right {
+  margin-top: 15px;
+  width: 45%;
+}
+.card_col_right .materials_item {
+  width: 100%;
+}
+.card_delivery {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(135deg, rgb(234, 234, 234), rgb(255, 255, 255));
+  -webkit-box-shadow: -7px -7px 25px #fff, 7px 7px 15px rgba(0, 0, 0, 0.1490196078);
+          box-shadow: -7px -7px 25px #fff, 7px 7px 15px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 6px;
+}
+.card_delivery_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.card_delivery_title img {
+  height: 28px;
+  margin-right: 10px;
+}
+.card_delivery_title h3 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+}
+.card_delivery p {
+  text-align: left;
+}
+.card_delivery p span {
+  font-size: 14px;
+  font-weight: 600;
+}
 .card_tabs {
   display: -webkit-box;
   display: -ms-flexbox;
