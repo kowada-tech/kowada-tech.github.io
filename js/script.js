@@ -28,6 +28,14 @@ $(document).ready(function() {
 
   });
 
+  $('.card_tabs_btn').click(function() {
+    $(this).parent().find('.active').removeClass('active');
+    $(this).addClass('active');
+    const idBlock = '#' + $(this).attr('data-label');
+    $(idBlock).parent().find('.active').removeClass('active');
+    $(idBlock).addClass('active');
+  });
+
   $('.langMenu').click(function(){
     if ($(this).hasClass('active')){
       $(this).removeClass('active');

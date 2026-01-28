@@ -2043,14 +2043,34 @@ footer.footer {
 }
 .card_text {
   margin-top: 20px;
-  padding: 25px 20px;
+  padding: 15px 30px;
   border: 1px solid #eee;
   border-radius: 6px;
 }
+.card_text h5 {
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  margin: 10px 0px 25px;
+  font-size: 18px;
+}
 .card_text p {
   text-align: left;
-  margin: 3px 0px;
+  margin: 10px 0px;
   color: #6b7280;
+  font-size: 14px;
+}
+.card_text p strong {
+  display: block;
+  margin: 10px 0px 15px;
+  text-align: left;
+  font-weight: 700;
+}
+.card_text_item {
+  display: none;
+}
+.card_text_item.active {
+  display: block;
 }
 
 .footer {
