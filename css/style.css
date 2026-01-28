@@ -520,6 +520,44 @@ a.btn font {
   background-color: #ADACAC;
 }
 
+.breadcrumbs {
+  background-color: #f5f5f5;
+  padding: 15px 0px;
+}
+.breadcrumbs_wrap {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumbs_wrap li a {
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.breadcrumbs_wrap li a:hover {
+  color: #bb976d;
+}
+.breadcrumbs_wrap li span {
+  margin: 0px 10px;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+.breadcrumbs_wrap li:last-child span {
+  color: #bb976d;
+}
+
 .header_wrap {
   margin: 0 auto;
   max-width: 1600px;
@@ -1149,7 +1187,6 @@ a.btn font {
   background-color: #fff;
   -webkit-box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.2);
           box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.2);
-  cursor: pointer;
   z-index: 5;
   /*         &:hover {
               .bestsellers_img {
@@ -1285,6 +1322,7 @@ a.btn font {
   padding: 20px 20px 10px;
 }
 .bestsellers_title {
+  display: block;
   margin-top: 10px;
   text-align: left;
   font-weight: 600;
@@ -1652,6 +1690,80 @@ a.btn font {
 .about_str img {
   width: 100px;
   height: 33px;
+}
+
+.card {
+  padding: 50px 0px;
+}
+.card_wrap {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+}
+.card .gallery .column {
+  width: 20%;
+  height: 660px;
+  overflow-y: scroll;
+}
+.card .gallery .column img {
+  padding: 0px 15px 15px;
+  width: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.card .gallery .column img:hover {
+  opacity: 1;
+}
+.card .gallery .column img.active {
+  opacity: 1;
+}
+.card .gallery .container {
+  position: relative;
+  width: 75%;
+}
+.card .gallery .container img {
+  width: 100%;
+}
+.card_descr {
+  width: 43%;
+}
+.card_descr h1 {
+  color: #000;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: left;
+}
+.card_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0px;
+}
+.card_noprice {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+.card_price {
+  text-align: left;
+  font-weight: 600;
+  color: #bb976d;
+  font-size: 28px;
 }
 
 .footer {

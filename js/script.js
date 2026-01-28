@@ -11,6 +11,23 @@ $(document).ready(function() {
     swipeToSlide: true
   });
 
+  function openGalleryImage (imgs) {
+  // Получить развернутое изображение
+    var expandImg = document.getElementById("expandedImg");
+    // Используйте тот же src в развернутом изображении, что и изображение, нажатое на сетке
+    expandImg.src = imgs.src;
+    // Показать элемент контейнера (скрытый с помощью CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+
+  $('.gallery_img').click(function() {
+    $(this).parent().find('.active').removeClass('active');
+    $(this).addClass('active');
+    const srcImg = $(this).attr('src');
+    $('#expandedImg').attr('src', srcImg);
+
+  });
+
   $('.langMenu').click(function(){
     if ($(this).hasClass('active')){
       $(this).removeClass('active');

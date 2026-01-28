@@ -136,4 +136,39 @@ a.btn {
         background-color: $violet-100; 
     }
  */
+    
 }
+.breadcrumbs {
+        background-color: $main-color;
+        padding: 15px 0px;
+        &_wrap {
+            margin: 0 auto;
+            max-width: 1600px;
+            padding: 0px 10px;
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            li {
+                a {
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 14px;
+                    transition: all 0.6s;
+                    &:hover {
+                        color: $item-color;
+                    }
+                }
+                span {
+                    margin: 0px 10px;
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                &:last-child {
+                    span {
+                        color: $item-color;
+                    }
+                }
+            }
+        }
+    }
