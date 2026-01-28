@@ -573,36 +573,6 @@ a.btn font {
 .header_descr {
   font-weight: 500;
 }
-.header_btn {
-  position: relative;
-  padding: 9px 15px 6px;
-  background-color: #bb976d;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.header_btn .icon-file-text2 {
-  font-size: 14px;
-  font-weight: 300;
-}
-.header_btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: rgba(238, 224, 208, 0.2);
-  border-radius: 6px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.header_btn:hover::before {
-  width: 100%;
-}
 .header_search {
   position: relative;
 }
@@ -1245,6 +1215,21 @@ a.btn font {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   z-index: 1;
+}
+.bestsellers_img:hover .bestsellers_img_obv {
+  display: none;
+}
+.bestsellers_img:hover .bestsellers_img_rev {
+  display: block;
+}
+.bestsellers_img_obv {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.bestsellers_img_rev {
+  display: none;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 .bestsellers_safety {
   position: absolute;

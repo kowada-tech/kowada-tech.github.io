@@ -36,36 +36,6 @@
     &_descr {
         font-weight: 500;
     }
-    &_btn {
-        position: relative;
-        padding: 9px 15px 6px;
-        background-color: $item-color;
-        border-radius: 6px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        transition: all 1s ease;
-        .icon-file-text2 {
-            font-size: 14px;
-            font-weight: 300;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: rgba(238,224,208,0.2);
-            border-radius: 6px;
-            transition: all 1s ease;
-        }
-        &:hover {
-            &::before {
-                width: 100%;
-            }
-        }
-    }
     &_search {
         position: relative;
         input {
@@ -142,7 +112,6 @@
         }
         &:hover {
             img {
-
                 transform: scale(1.1) rotate(10deg);
             }
             .header_category_title {
