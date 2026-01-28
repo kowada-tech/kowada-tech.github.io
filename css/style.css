@@ -399,19 +399,6 @@ footer.footer {
           flex: 0 0 auto;
 }
 
-.carousel font,
-.footer font,
-button.btn font,
-a.btn font {
-  color: #ffffff;
-}
-
-.header .basket_value font {
-  font-size: 15px;
-  line-height: 14px;
-  color: #ffffff;
-}
-
 .overlay {
   content: "";
   position: fixed;
@@ -428,6 +415,62 @@ a.btn font {
 .page_wrap {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.btn {
+  position: relative;
+  padding: 9px 15px;
+  background-color: #bb976d;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.btn_outline {
+  padding: 9px 5px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.btn_outline span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #CCC;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.btn_outline:hover {
+  -webkit-animation: heartbeaticon 1.5s ease infinite;
+          animation: heartbeaticon 1.5s ease infinite;
+}
+.btn_outline:hover span {
+  color: #bb976d;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(238, 224, 208, 0.2);
+  border-radius: 6px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.btn:hover::before {
+  width: 100%;
 }
 
 .first_title {
@@ -556,6 +599,44 @@ a.btn font {
 }
 .breadcrumbs_wrap li:last-child span {
   color: #bb976d;
+}
+
+.arrow {
+  cursor: pointer;
+  position: relative;
+  width: 15px;
+  height: 4px;
+  margin: 4px 0px 0px 5px;
+}
+.arrow div {
+  position: relative;
+  width: 10px;
+  height: 1px;
+  background-color: #57534e;
+  left: 0;
+  display: block;
+}
+.arrow div::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  top: -1px;
+  right: -2px;
+  background-color: #57534e;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.arrow div::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 2px;
+  top: 0px;
+  right: -2px;
+  background-color: #57534e;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header_wrap {
@@ -884,32 +965,8 @@ a.btn font {
   margin-right: 5px;
   color: #bb976d;
 }
-.carousel_btn {
+.carousel .btn {
   margin-top: 30px;
-  position: relative;
-  padding: 9px 15px 6px;
-  background-color: #bb976d;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.carousel_btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: rgba(238, 224, 208, 0.2);
-  border-radius: 6px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.carousel_btn:hover::before {
-  width: 100%;
 }
 .carousel_img img {
   height: 600px;
@@ -1711,6 +1768,18 @@ a.btn font {
   display: flex;
   width: 55%;
 }
+.card .gallery_discont {
+  position: absolute;
+  padding: 3px 8px;
+  top: 8px;
+  left: 8px;
+  border-radius: 6px;
+  background-color: #22c55e;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 6;
+}
 .card .gallery .column {
   width: 20%;
   height: 660px;
@@ -1744,6 +1813,33 @@ a.btn font {
   font-size: 28px;
   text-align: left;
 }
+.card_block {
+  padding: 10px 0px;
+  border-top: 1px solid #E8E8E8;
+}
+.card_block h3 {
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.card_block p {
+  text-align: left;
+  margin: 2px 0px;
+}
+.card_block p span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card_block p .bestsellers_safety {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+.card_parameter {
+  color: #999;
+}
 .card_row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1751,7 +1847,10 @@ a.btn font {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 0px;
+  padding: 10px 0px;
+}
+.card_row .btn_outline {
+  margin-left: 10px;
 }
 .card_noprice {
   font-size: 18px;
@@ -1764,6 +1863,97 @@ a.btn font {
   font-weight: 600;
   color: #bb976d;
   font-size: 28px;
+}
+.card_artik {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+}
+.card_offer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 14px;
+  margin-left: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #e7e5e4;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.card_offer span {
+  margin-right: 5px;
+  font-size: 11px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #57534e;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.card_offer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(87, 83, 78, 0.1);
+  border-radius: 6px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.card_offer:hover::before {
+  width: 100%;
+}
+.card_offer:hover .arrow {
+  -webkit-animation: services_arrow 1s linear infinite;
+          animation: services_arrow 1s linear infinite;
+}
+.card_tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card_tabs_btn {
+  margin-right: 10px;
+  padding: 9px 15px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card_tabs_btn.active {
+  border: 1px solid #bb976d;
+  background-color: #bb976d;
+  color: #fff;
+}
+.card_tabs_btn:hover {
+  border: 1px solid #bb976d;
+  background-color: #bb976d;
+  color: #fff;
+}
+.card_text {
+  margin-top: 20px;
+  padding: 25px 20px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+.card_text p {
+  text-align: left;
+  margin: 3px 0px;
+  color: #6b7280;
 }
 
 .footer {

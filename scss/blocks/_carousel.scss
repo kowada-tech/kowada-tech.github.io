@@ -56,32 +56,8 @@
             }
         }
     }
-    &_btn {
+    .btn {
         margin-top: 30px;
-        position: relative;
-        padding: 9px 15px 6px;
-        background-color: $item-color;
-        border-radius: 6px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        transition: all 1s ease;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: rgba(238,224,208,0.2);
-            border-radius: 6px;
-            transition: all 1s ease;
-        }
-        &:hover {
-            &::before {
-                width: 100%;
-            }
-        }
     }
     &_img {
         img {

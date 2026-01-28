@@ -24,23 +24,6 @@ html, body {
 footer.footer {
     flex: 0 0 auto;
 }
-.carousel, 
-.footer,
-button.btn,
-a.btn {
-    font {
-        color: #ffffff;
-    }
-}
-.header {
-    .basket_value {
-        font {
-            font-size: 15px;
-            line-height: 14px;
-            color: #ffffff;
-        }
-    }
-}
 .overlay {
     content: '';
     position: fixed;
@@ -57,7 +40,52 @@ a.btn {
     max-width: 1600px;
     margin: 0 auto;
 }
-
+.btn {
+    position: relative;
+    padding: 9px 15px;
+    background-color: $item-color;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s ease;
+    &_outline {
+        padding: 9px 5px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.6s;
+        span {
+            font-size: 30px;
+            font-weight: 700;
+            color: #CCC;
+            transition: all 0.6s;
+        }
+        &:hover {
+            span {
+                color: $item-color;
+            }
+            animation: heartbeaticon 1.5s ease infinite;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: rgba(238,224,208,0.2);
+        border-radius: 6px;
+        transition: all 1s ease;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}
 .first {
     &_title {
         position: relative;
@@ -139,36 +167,72 @@ a.btn {
     
 }
 .breadcrumbs {
-        background-color: $main-color;
-        padding: 15px 0px;
-        &_wrap {
-            margin: 0 auto;
-            max-width: 1600px;
-            padding: 0px 10px;
-            display: flex;
-            justify-content:flex-start;
-            align-items: center;
-            li {
-                a {
-                    color: #000;
-                    font-weight: 600;
-                    font-size: 14px;
-                    transition: all 0.6s;
-                    &:hover {
-                        color: $item-color;
-                    }
+    background-color: $main-color;
+    padding: 15px 0px;
+    &_wrap {
+        margin: 0 auto;
+        max-width: 1600px;
+        padding: 0px 10px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        li {
+            a {
+                color: #000;
+                font-weight: 600;
+                font-size: 14px;
+                transition: all 0.6s;
+                &:hover {
+                    color: $item-color;
                 }
+            }
+            span {
+                margin: 0px 10px;
+                color: #000;
+                font-weight: 600;
+                font-size: 14px;
+            }
+            &:last-child {
                 span {
-                    margin: 0px 10px;
-                    color: #000;
-                    font-weight: 600;
-                    font-size: 14px;
-                }
-                &:last-child {
-                    span {
-                        color: $item-color;
-                    }
+                    color: $item-color;
                 }
             }
         }
     }
+}
+
+.arrow {
+    cursor: pointer;
+    position: relative;
+    width: 15px;
+    height: 4px;
+    margin: 4px 0px 0px 5px;
+    div {
+        position: relative;
+        width: 10px;
+        height: 1px;
+        background-color: #57534e;
+        left: 0;
+        display: block;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 2px;
+            top: -1px;
+            right: -2px;
+            background-color: #57534e;
+            transform: rotate(45deg);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 2px;
+            top: 0px;
+            right: -2px;
+            background-color: #57534e;
+            transform: rotate(-45deg);
+        }
+    }
+}
