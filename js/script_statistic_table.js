@@ -100,7 +100,7 @@ $(document).ready(function() {
     if ($(this).is(':checked')){
       console.log('Включен');
     } else {
-      console.log('Выключен');
+      console.log('Выключеkн');
     }
   });
 

@@ -40,6 +40,46 @@ $(document).ready(function() {
     $(idBlock).addClass('active');
   });
 
+  //Клик на Категорию
+  $('.catalog_category_wrap').click(function() {
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $(this).parent().find('.catalog_subcategories').toggle();
+    } else {
+      if ( $(this).parents('.catalog_categories').find('.catalog_category_wrap').hasClass('open')) {
+        $(this).parents('.catalog_categories').find('.catalog_category_wrap.open').removeClass('open').parent().find('.catalog_subcategories').toggle();
+      }
+      $(this).addClass('open');
+      $(this).parent().find('.catalog_subcategories').toggle();
+    }
+  });
+
+ $('.catalog_subcategory_wrap').click(function() {
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $(this).parent().find('.catalog_subcategory_item').toggle();
+    } else {
+      if ( $(this).parents('.catalog_subcategories').find('.catalog_subcategory_wrap').hasClass('open')) {
+        $(this).parents('.catalog_subcategories').find('.catalog_subcategory_wrap.open').removeClass('open').parent().find('.catalog_subcategory_item').toggle();
+      }
+      $(this).addClass('open');
+      $(this).parent().find('.catalog_subcategory_item').toggle();
+    }
+  });
+
+  $('.catalog_subcategory_item_wrap').click(function() {
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $(this).parent().find('.catalog_subcategory_item_list').toggle();
+    } else {
+      if ( $(this).parents('.catalog_subcategory_item').find('.catalog_subcategory_item_wrap').hasClass('open')) {
+        $(this).parents('.catalog_subcategory_item').find('.catalog_subcategory_item_wrap.open').removeClass('open').parent().find('.catalog_subcategory_item_list').toggle();
+      }
+      $(this).addClass('open');
+      $(this).parent().find('.catalog_subcategory_item_list').toggle();
+    }
+  });
+
   $('.langMenu').click(function(){
     if ($(this).hasClass('active')){
       $(this).removeClass('active');

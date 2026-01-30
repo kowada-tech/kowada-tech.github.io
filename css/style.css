@@ -499,10 +499,21 @@ footer.footer {
   font-size: 30px;
   font-weight: 600;
 }
+.first_title h2 a {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  margin-left: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
 .first_title:hover {
   cursor: pointer;
 }
 .first_title:hover h2 {
+  color: #bb976d;
+}
+.first_title:hover h2 a {
   color: #bb976d;
 }
 .first_title:hover img {
@@ -1298,14 +1309,14 @@ footer.footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px;
+  padding: 20px 5px;
   position: relative;
   border-bottom: 1px #eee solid;
 }
 .bestsellers_img img {
   position: relative;
   margin: 0 auto;
-  width: 250px;
+  width: 100%;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   z-index: 1;
@@ -2121,6 +2132,248 @@ footer.footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.catalog {
+  padding: 5px 5px 30px;
+}
+.catalog_title {
+  margin: 25px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog_title p {
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.catalog_title span {
+  display: inline-block;
+  background-color: #e7e5e4;
+  border-radius: 6px;
+  padding: 2px 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #57534e;
+}
+.catalog_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 6px;
+}
+.catalog_sidebar {
+  width: 18%;
+  position: relative;
+  border: 1px solid #bb976d;
+  border-radius: 6px;
+}
+.catalog_category {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #bb976d;
+}
+.catalog_category:last-child {
+  border-bottom: none;
+}
+.catalog_category_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+}
+.catalog_category_wrap img {
+  width: 14px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.catalog_category_wrap.open img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.catalog_category_wrap.open .catalog_category_title {
+  color: #bb976d;
+}
+.catalog_category_title {
+  text-align: left;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.catalog_category_title:hover {
+  color: #bb976d;
+}
+.catalog_category_quantity {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 12px;
+}
+.catalog_subcategories {
+  display: none;
+  padding: 10px;
+}
+.catalog_subcategory {
+  margin: 10px 0px;
+  text-align: left;
+}
+.catalog_subcategory_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 25px;
+}
+.catalog_subcategory_wrap img {
+  width: 14px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+.catalog_subcategory_wrap.open img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.catalog_subcategory_wrap.open .catalog_subcategory_title {
+  color: #bb976d;
+}
+.catalog_subcategory_title {
+  display: block;
+  text-align: left;
+  margin: 5px 0px;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.catalog_subcategory_title:hover {
+  color: #bb976d;
+}
+.catalog_subcategory_item {
+  display: none;
+}
+.catalog_subcategory_item li {
+  margin-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid #6b7280;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.catalog_subcategory_item li:first-child {
+  border-top: 1px solid #6b7280;
+}
+.catalog_subcategory_item li p {
+  padding: 8px 15px;
+  display: block;
+  text-align: left;
+  border-radius: 6px;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 12px;
+}
+.catalog_subcategory_item li:hover {
+  color: #233353;
+  background-color: #e5e5e5;
+}
+.catalog_subcategory_item li:hover p {
+  color: #233353;
+}
+.catalog_subcategory_item_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog_subcategory_item_wrap img {
+  width: 10px;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+}
+.catalog_subcategory_item_wrap.open img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.catalog_subcategory_item_wrap.open p {
+  color: #bb976d;
+}
+.catalog_subcategory_item_list {
+  display: none;
+  background-color: #fff;
+}
+.catalog_subcategory_item_list li {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  padding: 3px 10px;
+}
+.catalog_subcategory_item_list li:last-child {
+  border-bottom: none;
+}
+.catalog .bestsellers {
+  width: 60%;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+.catalog .bestsellers_item {
+  width: calc((100% - 40px) / 4);
+}
+.catalog .bestsellers_img {
+  height: 230px;
+}
+.catalog .bestsellers_descr {
+  padding: 10px;
+}
+.catalog .bestsellers_title {
+  font-size: 14px;
+}
+.catalog .bestsellers_price {
+  font-size: 14px;
+}
+.catalog .bestsellers_noprice {
+  font-size: 10px;
+}
+.catalog_filter {
+  width: 20%;
 }
 
 .footer {
