@@ -20,6 +20,9 @@ $(document).ready(function() {
     expandImg.parentElement.style.display = "block";
   }
 
+  $(function(){
+    $('#includedContent').load('header.html'); 
+  });
   $('.gallery_img').click(function() {
     $(this).parent().find('.active').removeClass('active');
     $(this).addClass('active');
