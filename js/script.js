@@ -21,8 +21,9 @@ $(document).ready(function() {
   }
 
   $(function(){
-    $('#includedContent').load('header.html'); 
+    $('#includedContent').load('./header.html'); 
   });
+
   $('.gallery_img').click(function() {
     $(this).parent().find('.active').removeClass('active');
     $(this).addClass('active');
