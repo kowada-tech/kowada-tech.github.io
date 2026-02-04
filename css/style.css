@@ -2052,7 +2052,7 @@ footer.footer {
   margin-bottom: 15px;
 }
 .card_similar_item {
-  margin: 20px 0px;
+  margin: 0px 0px 20px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2247,7 +2247,7 @@ footer.footer {
 }
 .catalog_category {
   position: relative;
-  padding: 10px;
+  padding: 10px 5px 10px 10px;
   cursor: pointer;
   border-bottom: 1px solid #ccc;
 }
@@ -2265,12 +2265,12 @@ footer.footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 25px;
+  padding: 0px 7px 0px 20px;
 }
 .catalog_category_wrap img {
-  width: 14px;
+  width: 12px;
   position: absolute;
-  top: 6px;
+  top: 7px;
   left: 0;
 }
 .catalog_category_wrap.open img {
@@ -2300,10 +2300,9 @@ footer.footer {
 }
 .catalog_subcategories {
   display: none;
-  padding: 10px;
+  padding: 2px 0px 0px 10px;
 }
 .catalog_subcategory {
-  margin: 10px 0px;
   text-align: left;
 }
 .catalog_subcategory_wrap {
@@ -2317,12 +2316,12 @@ footer.footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 25px;
+  padding: 1px 7px 1px 20px;
 }
 .catalog_subcategory_wrap img {
-  width: 14px;
+  width: 12px;
   position: absolute;
-  top: 12px;
+  top: 11px;
   left: 0;
 }
 .catalog_subcategory_wrap.open img {
@@ -2348,33 +2347,21 @@ footer.footer {
 }
 .catalog_subcategory_item {
   display: none;
+  margin-left: 5px;
 }
 .catalog_subcategory_item li {
-  margin-left: 20px;
   text-align: left;
-  border-bottom: 1px solid #6b7280;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.catalog_subcategory_item li:first-child {
-  border-top: 1px solid #6b7280;
-}
 .catalog_subcategory_item li p {
-  padding: 8px 15px;
   display: block;
   text-align: left;
   border-radius: 6px;
   color: #6b7280;
   font-weight: 600;
   font-size: 12px;
-}
-.catalog_subcategory_item li:hover {
-  color: #233353;
-  background-color: #e5e5e5;
-}
-.catalog_subcategory_item li:hover p {
-  color: #233353;
 }
 .catalog_subcategory_item_wrap {
   position: relative;
@@ -2387,12 +2374,21 @@ footer.footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border-radius: 6px;
+  padding: 4px 7px 4px 20px;
+}
+.catalog_subcategory_item_wrap:hover {
+  color: #233353;
+  background-color: #e5e5e5;
+}
+.catalog_subcategory_item_wrap:hover p {
+  color: #233353;
 }
 .catalog_subcategory_item_wrap img {
   width: 10px;
   position: absolute;
-  top: 12px;
-  left: 0px;
+  top: 8px;
+  left: 5px;
 }
 .catalog_subcategory_item_wrap.open img {
   -webkit-transform: rotate(180deg);
@@ -2404,6 +2400,7 @@ footer.footer {
 .catalog_subcategory_item_list {
   display: none;
   background-color: #FAFAFA;
+  margin-left: 25px;
 }
 .catalog_subcategory_item_list li {
   display: -webkit-box;
@@ -2415,10 +2412,15 @@ footer.footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3px 10px;
+  padding: 4px 7px 4px 7px;
+  border-radius: 6px;
 }
-.catalog_subcategory_item_list li:last-child {
-  border-bottom: none;
+.catalog_subcategory_item_list li:hover {
+  color: #233353;
+  background-color: #e5e5e5;
+}
+.catalog_subcategory_item_list li:hover p {
+  color: #233353;
 }
 .catalog_subcategory_item_list li p {
   padding: 0px 0px;
@@ -2435,7 +2437,7 @@ footer.footer {
 }
 .catalog_subcategory_item_quantity {
   display: block;
-  margin: 10px 0px 5px 5px;
+  margin-top: 3px;
   text-align: right;
   width: 40px;
   color: #6b7280;
@@ -2473,6 +2475,18 @@ footer.footer {
 .catalog .bestsellers_noprice {
   font-size: 10px;
 }
+.catalog .bestsellers_icons p {
+  margin-top: 4px;
+}
+.catalog .bestsellers_icons p .icon-heart {
+  font-size: 22px;
+}
+.catalog .bestsellers_icons button {
+  padding: 9px 9px 3px 8px;
+}
+.catalog .bestsellers_icons button .icon-cart {
+  font-size: 20px;
+}
 .catalog_filter {
   width: 18%;
   position: sticky;
@@ -2481,7 +2495,7 @@ footer.footer {
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100vh;
-  padding: 30px 15px;
+  padding: 0px 15px 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
   -webkit-box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.7);
@@ -2491,17 +2505,18 @@ footer.footer {
   position: relative;
 }
 .catalog_filter_wrap .btn {
-  margin: 15px 20px 0px;
-  padding: 9px 35px 9px 15px;
-  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 5px 25px 5px 8px;
+  font-size: 14px;
 }
 .catalog_filter_wrap .btn span {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 13px;
-  font-size: 20px;
+  right: 7px;
+  font-size: 16px;
 }
 .catalog_filter_title {
   padding: 10px 0px;
@@ -2602,7 +2617,7 @@ footer.footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 5px;
+  margin: 5px 5px;
 }
 .catalog_filter_checkbox .checkbox_checkmark {
   top: 4px;
@@ -2615,7 +2630,7 @@ footer.footer {
   text-align: left;
   color: #777;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
 }
 .catalog_filter_checkbox .checkbox_body span.checkbox_quantity {
   padding: 2px 4px;
@@ -2624,7 +2639,7 @@ footer.footer {
   border-radius: 4px;
   color: #6b7280;
   font-weight: 600;
-  font-size: 9px;
+  font-size: 10px;
 }
 .catalog_filter_checkbox .checkbox.active .checkbox_checkmark {
   background-color: #bb976d;
