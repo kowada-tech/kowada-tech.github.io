@@ -80,6 +80,50 @@ $(document).ready(function() {
     }
   });
 
+  $('.catalog_filter_title').click(function() {
+    if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $(this).parent().find('.catalog_filter_hidden').toggle();
+    } else {
+      $(this).addClass('open');
+      $(this).parent().find('.catalog_filter_hidden').toggle();
+    }
+  });
+
+  $("#catalog_year_range").slider({
+      animate: "slow",
+      range: true,
+      min: 1700,
+      max: 1917,
+      values: [1700, 1917],
+      slide : function(event, ui) {
+        $( "#year_min" ).val(ui.values[0]);
+        $( "#year_max" ).val(ui.values[1]);
+      }
+  });
+  
+  $( "#year_min" ).val($("#catalog_year_range").slider("values", 0));
+  $( "#year_max" ).val($("#catalog_year_range").slider("values", 1));
+
+   $("#catalog_price_range").slider({
+      animate: "slow",
+      range: true,
+      min: 20,
+      max: 2500000,
+      values: [20, 2500000],
+      slide : function(event, ui) {
+        $( "#price_min" ).val(ui.values[0]);
+        $( "#price_max" ).val(ui.values[1]);
+      }
+  });
+  
+  $( "#price_min" ).val($("#catalog_price_range").slider("values", 0));
+  $( "#price_max" ).val($("#catalog_price_range").slider("values", 1));
+
+  $('.checkbox').click(function() {
+    $(this).toggleClass('active');
+  });
+
   $('.langMenu').click(function(){
     if ($(this).hasClass('active')){
       $(this).removeClass('active');
