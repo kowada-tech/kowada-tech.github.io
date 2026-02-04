@@ -2481,14 +2481,14 @@ footer.footer {
   overflow-x: hidden;
   overflow-y: auto;
   max-height: 100vh;
-}
-.catalog_filter_wrap {
-  position: relative;
   padding: 30px 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
   -webkit-box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.7);
           box-shadow: 4px 6px 8px -7px rgba(34, 60, 80, 0.7);
+}
+.catalog_filter_wrap {
+  position: relative;
 }
 .catalog_filter_wrap .btn {
   margin: 15px 20px 0px;
